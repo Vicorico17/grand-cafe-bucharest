@@ -25,5 +25,5 @@ menuButton?.addEventListener("click", () => {
   const isOpen = fullMenu.toggleAttribute("hidden");
   const isExpanded = !isOpen;
   menuButton.setAttribute("aria-expanded", String(isExpanded));
-  menuButton.textContent = isExpanded ? "Hide full menu" : "View full menu";
+  menuButton.textContent = isExpanded ? "Hide the full menu" : "Show the full menu";
 });
