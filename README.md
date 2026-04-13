@@ -1,0 +1,16 @@
+# Grand Cafe Bucharest
+
+Website/app for Grand Cafe Buharest, a new restaurant opening in Casa Monteoru on Calea Victoriei in Bucharest.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
