@@ -352,7 +352,7 @@ h3 {
   text-align: left;
 }
 
-.timeline-item:nth-child(even) div {
+.timeline-item:nth-child(even) .timeline-copy {
   grid-column: 1;
   grid-row: 1;
   text-align: right;
@@ -362,8 +362,17 @@ h3 {
   text-align: right;
 }
 
-.timeline-item:nth-child(odd) div {
+.timeline-item:nth-child(odd) .timeline-copy {
   grid-column: 2;
+}
+
+.timeline-item:nth-child(odd) .timeline-media {
+  grid-column: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-media {
+  grid-column: 1;
+  text-align: right;
 }
 
 .year {
@@ -380,6 +389,22 @@ h3 {
 .timeline-item p {
   margin: 0;
   color: var(--muted);
+}
+
+.timeline-media {
+  margin: -34px 0 0;
+}
+
+.timeline-media img {
+  width: min(100%, 330px);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 14px 40px rgba(23, 20, 18, 0.14);
+}
+
+.timeline-item:nth-child(even) .timeline-media img {
+  margin-left: auto;
 }
 
 .image-panel {
@@ -416,6 +441,13 @@ h3 {
   flex: 0 0 auto;
 }
 
+.menu-button {
+  flex: 0 0 auto;
+  color: var(--white);
+  background: transparent;
+  border-color: rgba(255, 253, 248, 0.6);
+}
+
 .menu-grid,
 .contact-grid {
   display: grid;
@@ -439,9 +471,47 @@ h3 {
   color: rgba(255, 253, 248, 0.72);
 }
 
+.full-menu {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 253, 248, 0.18);
+}
+
+.full-menu[hidden] {
+  display: none;
+}
+
+.full-menu-column {
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid rgba(255, 253, 248, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.05);
+}
+
+.full-menu-column p {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 18px 0 0;
+  color: rgba(255, 253, 248, 0.75);
+}
+
+.full-menu-column strong {
+  flex: 0 0 auto;
+  color: var(--brass);
+  font-weight: 800;
+}
+
 .reserve {
   align-items: start;
   background: var(--white);
+}
+
+.reserve-spot {
+  margin-top: 18px;
 }
 
 .reservation-form {
@@ -566,6 +636,7 @@ textarea {
   .intro,
   .reserve,
   .menu-grid,
+  .full-menu,
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -624,10 +695,22 @@ textarea {
 
   .timeline-item:nth-child(odd) .year,
   .timeline-item:nth-child(even) .year,
-  .timeline-item:nth-child(odd) div,
-  .timeline-item:nth-child(even) div {
+  .timeline-item:nth-child(odd) .timeline-copy,
+  .timeline-item:nth-child(even) .timeline-copy,
+  .timeline-item:nth-child(odd) .timeline-media,
+  .timeline-item:nth-child(even) .timeline-media {
     grid-column: 1;
     grid-row: auto;
     text-align: left;
+  }
+
+  .timeline-media {
+    margin: 0;
+  }
+
+  .timeline-media img,
+  .timeline-item:nth-child(even) .timeline-media img {
+    width: 100%;
+    margin-left: 0;
   }
 }
