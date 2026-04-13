@@ -336,10 +336,9 @@ h3 {
 }
 
 .timeline {
-  --rail-x: clamp(92px, 20vw, 180px);
   position: relative;
   display: grid;
-  gap: 14px;
+  gap: 18px;
   padding: 10px 0 18px;
 }
 
@@ -347,93 +346,79 @@ h3 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: var(--rail-x);
+  left: 50%;
   width: 2px;
   content: "";
+  transform: translateX(-50%);
   background: linear-gradient(var(--brass), var(--moss), var(--ruby));
 }
 
 .timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: var(--rail-x) minmax(0, 1fr);
-  gap: clamp(18px, 3vw, 34px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 54px);
   align-items: start;
-  min-height: 132px;
-  padding: 16px 0;
-  opacity: 0.58;
+  min-height: 128px;
+  padding: 14px 0;
   scroll-snap-align: start;
-  transform: translateY(10px);
-  transition:
-    opacity 260ms ease,
-    transform 260ms ease;
 }
 
 .timeline-item::before {
   position: absolute;
-  top: 24px;
-  left: var(--rail-x);
+  top: 22px;
+  left: 50%;
   width: 16px;
   height: 16px;
   content: "";
-  transform: translateX(-7px) scale(0.86);
+  transform: translateX(-50%);
   border: 3px solid var(--paper);
   border-radius: 999px;
   background: var(--ruby);
   box-shadow: 0 0 0 1px var(--brass);
-  transition:
-    background 260ms ease,
-    box-shadow 260ms ease,
-    transform 260ms ease;
 }
 
-.timeline-item.is-active {
-  opacity: 1;
-  transform: translateY(0);
+.timeline-item:nth-child(even) .year {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
 }
 
-.timeline-item.is-active::before {
-  background: var(--brass);
-  box-shadow: 0 0 0 7px rgba(177, 138, 74, 0.18);
-  transform: translateX(-7px) scale(1);
-}
-
-.timeline-item.is-active .year {
-  color: var(--ruby);
-}
-
-.timeline-item.is-active .timeline-copy {
-  border-color: rgba(177, 138, 74, 0.52);
-  box-shadow: 0 18px 42px rgba(23, 20, 18, 0.11);
-}
-
-.timeline-item .year {
+.timeline-item:nth-child(even) .timeline-copy {
   grid-column: 1;
-  grid-row: 1 / span 2;
+  grid-row: 1;
+  text-align: right;
+}
+
+.timeline-item:nth-child(odd) .year {
+  text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-copy {
+  grid-column: 2;
+}
+
+.timeline-item:nth-child(odd) .timeline-media {
+  grid-column: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-media {
+  grid-column: 1;
   text-align: right;
 }
 
 .timeline-copy {
-  grid-column: 2;
   padding: clamp(18px, 3vw, 26px);
   border: 1px solid rgba(216, 208, 195, 0.82);
   border-radius: 8px;
   background: rgba(255, 253, 248, 0.72);
-  transition:
-    border-color 260ms ease,
-    box-shadow 260ms ease;
-}
-
-.timeline-media {
-  grid-column: 2;
 }
 
 .year {
-  color: rgba(125, 18, 50, 0.5);
+  color: var(--ruby);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2.1rem, 4vw, 4rem);
   line-height: 0.9;
-  transition: color 260ms ease;
 }
 
 .timeline-item h3 {
@@ -446,7 +431,7 @@ h3 {
 }
 
 .timeline-media {
-  margin: -6px 0 0 18px;
+  margin: 10px 0 0;
   opacity: 0.86;
 }
 
@@ -459,16 +444,7 @@ h3 {
 }
 
 .timeline-item:nth-child(even) .timeline-media img {
-  margin-left: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .timeline-item,
-  .timeline-item::before,
-  .timeline-copy,
-  .year {
-    transition: none;
-  }
+  margin-left: auto;
 }
 
 .image-panel {
@@ -698,36 +674,36 @@ h3 {
   }
 
   .timeline {
-    --rail-x: 28px;
     gap: 10px;
+  }
+
+  .timeline::before,
+  .timeline-item::before {
+    left: 18px;
   }
 
   .timeline-item,
   .timeline-item:nth-child(even) {
-    grid-template-columns: 28px minmax(0, 1fr);
+    grid-template-columns: 1fr;
     gap: 14px;
     min-height: auto;
-    padding: 12px 0;
+    padding: 12px 0 12px 46px;
   }
 
-  .timeline-item::before {
-    top: 18px;
-  }
-
-  .timeline-item .year {
-    grid-column: 2;
-    grid-row: auto;
-    text-align: left;
-    font-size: clamp(2.1rem, 14vw, 3rem);
-  }
-
+  .timeline-item:nth-child(odd) .year,
+  .timeline-item:nth-child(even) .year,
   .timeline-item:nth-child(odd) .timeline-copy,
   .timeline-item:nth-child(even) .timeline-copy,
   .timeline-item:nth-child(odd) .timeline-media,
   .timeline-item:nth-child(even) .timeline-media {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: auto;
     text-align: left;
+  }
+
+  .timeline-item:nth-child(odd) .year,
+  .timeline-item:nth-child(even) .year {
+    font-size: clamp(2.1rem, 14vw, 3rem);
   }
 
   .timeline-copy {
