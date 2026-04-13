@@ -302,6 +302,7 @@ h3 {
   width: min(100%, 980px);
   max-height: min(660px, 72vh);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   padding: clamp(16px, 3vw, 28px);
   scroll-behavior: smooth;
@@ -705,26 +706,40 @@ h3 {
   }
 
   .timeline-shell {
-    max-height: 68vh;
-    padding: 12px 10px;
+    max-height: none;
+    overflow: visible;
+    overscroll-behavior: auto;
+    padding: 0;
+    scroll-snap-type: none;
+    background: transparent;
+    scrollbar-width: auto;
+  }
+
+  .timeline-shell::after {
+    display: none;
   }
 
   .timeline {
-    gap: 10px;
+    gap: 14px;
+    padding: 0;
   }
 
   .timeline::before,
   .timeline-item::before {
-    left: 18px;
+    display: none;
   }
 
   .timeline-item,
   .timeline-item:nth-child(even) {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 14px;
+    gap: 12px;
     min-height: auto;
-    padding: 12px 0 12px 46px;
+    padding: 18px;
+    scroll-snap-align: none;
+    border: 1px solid rgba(216, 208, 195, 0.82);
+    border-radius: 8px;
+    background: rgba(255, 253, 248, 0.72);
   }
 
   .timeline-item:nth-child(odd) .year,
@@ -745,16 +760,19 @@ h3 {
   }
 
   .timeline-copy {
-    padding: 16px;
+    padding: 0;
+    border: 0;
+    background: transparent;
   }
 
   .timeline-media {
-    margin: -4px 0 0;
+    margin: 2px 0 0;
   }
 
   .timeline-media img,
   .timeline-item:nth-child(even) .timeline-media img {
-    width: min(42vw, 120px);
+    width: 100%;
+    max-height: 190px;
     margin-left: 0;
   }
 }
