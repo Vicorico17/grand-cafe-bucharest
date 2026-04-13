@@ -542,50 +542,8 @@ h3 {
   margin-top: 18px;
 }
 
-.reservation-form {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  padding: clamp(20px, 3vw, 34px);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-}
-
-label {
-  display: grid;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 13px 14px;
-  color: var(--ink);
-  background: var(--paper);
-  font: inherit;
-}
-
-textarea {
-  resize: vertical;
-}
-
 .wide {
   grid-column: 1 / -1;
-}
-
-.form-note {
-  grid-column: 1 / -1;
-  min-height: 1.5em;
-  margin: 0;
-  color: var(--moss);
-  font-weight: 700;
 }
 
 .contact-grid {
@@ -696,10 +654,6 @@ textarea {
 
   h2 {
     font-size: clamp(2.25rem, 14vw, 3.6rem);
-  }
-
-  .reservation-form {
-    grid-template-columns: 1fr;
   }
 
   .timeline-shell {
