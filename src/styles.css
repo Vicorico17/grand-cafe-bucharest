@@ -290,38 +290,21 @@ h3 {
   font-size: 1.05rem;
 }
 
-.history-photo {
-  margin: 24px auto 0;
-}
-
-.history-photo img {
-  width: min(100%, 260px);
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 0 auto;
-}
-
-.history-photo figcaption {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 0.82rem;
-}
-
 .timeline-shell {
   width: min(100%, 980px);
   max-height: min(660px, 72vh);
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 18px clamp(10px, 2vw, 22px);
+  padding: clamp(16px, 3vw, 28px);
   scroll-behavior: smooth;
   scroll-padding: 22px;
   scroll-snap-type: y mandatory;
   scrollbar-color: var(--brass) rgba(23, 20, 18, 0.1);
   scrollbar-width: thin;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
   border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.56), rgba(255, 253, 248, 0.2)),
+    rgba(177, 138, 74, 0.08);
 }
 
 .timeline-shell::after {
