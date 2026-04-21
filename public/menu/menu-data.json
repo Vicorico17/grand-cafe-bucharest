@@ -1,0 +1,1919 @@
+{
+  "food": [
+    {
+      "title": "MIC DEJUN & OUA",
+      "items": [
+        {
+          "name": "Mic Dejun Grand",
+          "weight": "400 g",
+          "ingredients": "ouă fierte (100 g), emmentaler (40 g), dulceață (25 g), unt (20 g), croissant (60 g), prosciutto cotto (50 g), iaurt (70 g), nuci (35 g), brie (30 g)",
+          "description": "Selecție completă de mic dejun cu brânzeturi fine, prosciutto și elemente dulci.",
+          "price": "120"
+        },
+        {
+          "name": "Ou Poșat cu Spanac & Feta",
+          "weight": "350 g",
+          "ingredients": "spanac (120 g), roșii cherry (60 g), feta (50 g), ou poșat (60 g), unt (20 g), pâine (40 g)",
+          "description": "Spanac sotat, roșii și feta, completate de un ou poșat cremos.",
+          "price": "42"
+        },
+        {
+          "name": "Shakshuka cu Brânză de Capră & Harissa",
+          "weight": "350 g",
+          "ingredients": "roșii coapte (170 g), ou (60 g), brânză de capră (50 g), harissa (15 g), ceapă & usturoi (25 g), pâine (30 g)",
+          "description": "Ouă în sos de roșii coapte, cu brânză de capră și accente ușor picante.",
+          "price": "41"
+        },
+        {
+          "name": "Cartofi Rustici cu Ouă & Telemea",
+          "weight": "300 g",
+          "ingredients": "cartofi copți (130 g), ouă (100 g), telemea (60 g), ceapă (20 g), usturoi (10 g), dovlecei (30 g), ciuperci (30 g), ardei gras (20 g)",
+          "description": "Cartofi copți cu legume și ouă, completați de telemea maturată.",
+          "price": "39"
+        },
+        {
+          "name": "Ouă Benedict cu Prosciutto",
+          "weight": "250 g",
+          "ingredients": "brioșă (70 g), prosciutto cotto (50 g), ou poșat (60 g), sos olandez (70 g)",
+          "description": "Clasic reinterpretat cu sos olandez cremos și prosciutto.",
+          "price": "42"
+        },
+        {
+          "name": "Croissant cu Avocado & Somon Afumat",
+          "weight": "250 g",
+          "ingredients": "croissant (80 g), avocado (70 g), somon afumat (60 g), roșii (20 g), ceapă (20 g)",
+          "description": "Combinație fresh de avocado și somon afumat pe bază crocantă.",
+          "price": "51"
+        },
+        {
+          "name": "Pita Caldă cu Ou & Brânză maturata",
+          "weight": "350 g",
+          "ingredients": "pita (120 g), ou (80 g), brânză învechită (70 g), ceapă caramelizată (80 g)",
+          "description": "Pita caldă umplută cu ou și brânză intensă, cu note dulci de ceapă.",
+          "price": "43"
+        },
+        {
+          "name": "Omletă cu Jumări & Brânză maturata",
+          "weight": "300 g",
+          "ingredients": "ouă (120 g), jumări (70 g), brânză învechită (60 g), castraveți murați (30 g), ardei copt (20 g)",
+          "description": "Omletă consistentă cu jumări crocante și brânză maturată.",
+          "price": "43"
+        },
+        {
+          "name": "Toast cu Conopidă Coaptă & Avocado",
+          "weight": "300 g",
+          "ingredients": "conopidă (120 g), avocado (70 g), ou poșat (60 g), ceapă murată (20 g), usturoi & curcuma (10 g), pâine (40 g)",
+          "description": "Preparat vegetal aromat, cu texturi contrastante și ou poșat.",
+          "price": "42"
+        },
+        {
+          "name": "Frittata cu Spanac & Sos de Iaurt",
+          "weight": "250 g",
+          "ingredients": "ou (120 g), spanac (60 g), broccoli (40 g), usturoi (10 g), coriandru & mentă (10 g), sos iaurt (40 g)",
+          "description": "Frittata aerată cu verdețuri și sos răcoritor de iaurt.",
+          "price": "39"
+        },
+        {
+          "name": "Ouă Scramble cu Avocado & Salată",
+          "weight": "250 g",
+          "ingredients": "ouă (120 g), brânză (40 g), avocado (50 g), cherry (20 g), salată (10 g), ceapă verde (10 g)",
+          "description": "Ouă cremoase cu avocado și salată fresh.",
+          "price": "39"
+        },
+        {
+          "name": "Granola crocanta cu Iaurt & Fructe",
+          "weight": "300 g",
+          "ingredients": "ovăz & orz (120 g), alune & nuci (50 g), stafide (20 g), miere (20 g), zahăr (10 g), iaurt (60 g), fructe (20 g)",
+          "description": "Granola crocantă cu iaurt și fructe de sezon.",
+          "price": "38"
+        }
+      ]
+    },
+    {
+      "title": "BRUNCH URBAN",
+      "items": [
+        {
+          "name": "Club Sandwich cu pui & Bacon",
+          "weight": "250 g",
+          "ingredients": "toast (80 g), bacon (50 g), roșii (30 g), ou (50 g), castraveți murați (20 g), capere (10 g), piept de pui (60 g)",
+          "description": "Sandwich clasic cu pui, bacon și ou, echilibrat și consistent.",
+          "price": "45"
+        },
+        {
+          "name": "Ciabatta cu Pui Crocant & Sos BBQ",
+          "weight": "280 g",
+          "ingredients": "pâine (90 g), pui în crustă (100 g), maioneză (30 g), sos barbeque (20 g), salată",
+          "description": "Ciabatta crocantă cu pui suculent și sosuri aromate.",
+          "price": "44"
+        },
+        {
+          "name": "Croque Madame cu Branzeturi fine",
+          "weight": "270 g",
+          "ingredients": "toast (90 g), prosciutto cotto (60 g), emmentaler (40 g), gorgonzola (30 g), parmezan (20 g), ou (30 g)",
+          "description": "Sandwich franțuzesc bogat, cu brânzeturi fine și ou.",
+          "price": "48"
+        }
+      ]
+    },
+    {
+      "title": "SUPE & CREME",
+      "items": [
+        {
+          "name": "Supa de sezon",
+          "weight": "300 g",
+          "ingredients": "preparat zilnic din ingrediente de sezon (300 g)",
+          "description": "Supă proaspătă, în funcție de selecția zilnică.",
+          "price": "32"
+        }
+      ]
+    },
+    {
+      "title": "SALATE & FRESH",
+      "items": [
+        {
+          "name": "Salată Picantă cu Creveti",
+          "weight": "300 g",
+          "ingredients": "creveți (120 g), salată (60 g), maioneză (30 g), sriracha (10 g), tempura (30 g), kimchi (20 g), soia (10 g), lime (20 g)",
+          "description": "Creveți crocanți cu influențe asiatice și note picante.",
+          "price": "59"
+        },
+        {
+          "name": "Salată cu Rață Crocantă &Rodie",
+          "weight": "300 g",
+          "ingredients": "pulpă de rață (120 g), salată (50 g), apio (20 g), rodie (20 g), măr verde (30 g), tempura (20 g), susan (10 g), soia (10 g)",
+          "description": "Rață crocantă cu accente fresh și dulci-acrișoare.",
+          "price": "62"
+        },
+        {
+          "name": "Salată de Caracatiță cu cartofi Baby",
+          "weight": "300 g",
+          "ingredients": "caracatiță (120 g), cartof baby (80 g), spanac (30 g), roșii cherry (30 g), unt (10 g), usturoi (10 g), țelină murată (20 g)",
+          "description": "Caracatiță fragedă cu legume și arome mediteraneene.",
+          "price": "75"
+        },
+        {
+          "name": "Salată cuVita & Cartof Dulce copt",
+          "weight": "350 g",
+          "ingredients": "cartof dulce (120 g), vită (120 g), iaurt (40 g), usturoi (10 g), miere (10 g), ciuperci shimeji (30 g), salată (20 g)",
+          "description": "Combinație echilibrată de vită, dulce și cremos.",
+          "price": "59"
+        },
+        {
+          "name": "Salată Asiatică cu Vită & Susan",
+          "weight": "350 g",
+          "ingredients": "vită (130 g), edamame (40 g), morcov (30 g), ardei (30 g), ciuperci (30 g), ghimbir & usturoi (15 g), soia & sos stridii (20 g), susan (10 g)",
+          "description": "Salată intensă, cu influențe asiatice și vită fragedă.",
+          "price": "61"
+        },
+        {
+          "name": "Crudités de legume cu Sos Fondue de branzeturi",
+          "weight": "350 g",
+          "ingredients": "morcovi (60 g), broccoli (60 g), țelină (40 g), sparanghel (40 g), gauda (40 g), smântână (40 g), gorgonzola (30 g), brie (40 g)",
+          "description": "Legume fresh cu sos fondue cremos din brânzeturi fine.",
+          "price": "54"
+        },
+        {
+          "name": "Grand Café Romanian Tasting Board",
+          "weight": "1.290gr",
+          "ingredients": "Brânză maturată de tip burduf reinterpretat (cremos, servit în vas) – 120g Cașcaval afumat premium – 100g Brânză de capră rulată în ierburi – 100g Salam de Sibiu selecție fină – 80g Mușchi file maturat – 80g Pastramă de vită slow-cooked, feliată subțire – 100g Zacuscă artizanală (servită individual) – 100g Salată de vinete fină, cu ulei de măsline – 120g Ardei copți marinați – 120g Mix roșii cherry premium – 150g Ceapă roșie & microgreens – 40g Pâine rustică + focaccia de casă – 180g",
+          "description": "Selecție rafinată de brânzeturi și mezeluri românești artizanale, servite cu zacuscă, vinete, ardei copți și pâine rustică. Ideal pentru 2 persoane.",
+          "price": "160"
+        }
+      ]
+    },
+    {
+      "title": "APERITIVE FINE",
+      "items": [
+        {
+          "name": "Burrata cu Ardei Copți & Nuci",
+          "weight": "250 g",
+          "ingredients": "burrata (125 g), pâine integrală (50 g), ardei copt (40 g), muguri pin & nuci (20 g), parmezan (10 g), rodie (5 g)",
+          "description": "Burrata cremoasă cu accente dulci și crocante.",
+          "price": "51"
+        },
+        {
+          "name": "Selectie de Brânzeturi Fine (2 pers.)",
+          "weight": "300 g",
+          "ingredients": "brie (60 g), gorgonzola (60 g), gauda (60 g), parmezan (40 g), nuci (20 g), fructe confiate (20 g), struguri (20 g), grisine & biscuiți (20 g)",
+          "description": "Selecție de brânzeturi maturate, ideală pentru sharing.",
+          "price": "120"
+        },
+        {
+          "name": "Ceviche de Ton cu note citrice",
+          "weight": "200 g",
+          "ingredients": "ton (100 g), avocado (40 g), ghimbir (10 g), ceapă (10 g), portocală (20 g), soia (10 g), pâine (10 g)",
+          "description": "Ton proaspăt marinat, cu note citrice și exotice.",
+          "price": "78"
+        },
+        {
+          "name": "Tartar de Vită clasic",
+          "weight": "200 g",
+          "ingredients": "mușchi vită (120 g), maioneză (20 g), Worcestershire (5 g), ou (30 g), castraveți murați (15 g), pâine (10 g)",
+          "description": "Tartar clasic, fin condimentat, servit cu garnituri crocante.",
+          "price": "84"
+        },
+        {
+          "name": "Romanian Appetizer",
+          "weight": "250 g",
+          "ingredients": "salată vinete (100 g), zacuscă (80 g), cremă brânză (70 g)",
+          "description": "Selecție tradițională reinterpretată.",
+          "price": "51"
+        },
+        {
+          "name": "Guacamole fresh cu lamiae &Dijon",
+          "weight": "180 g",
+          "ingredients": "avocado (100 g), roșii (30 g), ceapă (20 g), Dijon (10 g), lămâie (20 g)",
+          "description": "Guacamole fresh, texturat și aromat.",
+          "price": "36"
+        },
+        {
+          "name": "Vită cu Hummus & Rodie",
+          "weight": "230 g",
+          "ingredients": "vită (120 g), hummus (70 g), rodie (20 g), nuci (10 g), tahini (5 g), usturoi (5 g)",
+          "description": "Vită fragedă servită pe hummus cremos, cu accente dulci-acrișoare de rodie.",
+          "price": "54"
+        },
+        {
+          "name": "Morcovi Caramelizați cu Iaurt & Mentă",
+          "weight": "250 g",
+          "ingredients": "morcovi (150 g), miere (20 g), iaurt (50 g), nuci (15 g), mentă (5 g), usturoi (5 g), boia afumată (5 g)",
+          "description": "Morcovi copți și caramelizați, serviți cu iaurt răcoritor și note aromate.",
+          "price": "36"
+        },
+        {
+          "name": "Brie Gratinat cu Fructe & Trufe",
+          "weight": "180 g",
+          "ingredients": "brie (120 g), fructe de pădure (30 g), nuci (15 g), trufe (5 g), miere (10 g)",
+          "description": "Brie cald, cremos, cu accente dulci și aromă subtilă de trufe.",
+          "price": "64"
+        }
+      ]
+    },
+    {
+      "title": "PASTE ARTIZANALE & RISOTTO",
+      "items": [
+        {
+          "name": "Pappardelle cu Fructe de Mare & Vin alb",
+          "weight": "350 g",
+          "ingredients": "paste (120 g), creveți (80 g), calamar (50 g), caracatiță (50 g), unt (20 g), vin alb (20 g), parmezan (10 g)",
+          "description": "Mix de fructe de mare în sos fin cu unt și vin alb.",
+          "price": "82"
+        },
+        {
+          "name": "Spaghetti Carbonara Clasic",
+          "weight": "350 g",
+          "ingredients": "paste (130 g), pancetta (80 g), ou (60 g), parmezan (30 g), piper (5 g)",
+          "description": "Rețetă clasică, cremoasă, cu pancetta și parmezan.",
+          "price": "56"
+        },
+        {
+          "name": "Spaghetti cu Burrata & Busuioc",
+          "weight": "350 g",
+          "ingredients": "paste (130 g), burrata (100 g), sos roșii (70 g), cherry (30 g), busuioc (10 g)",
+          "description": "Paste fine cu burrata cremoasă și roșii coapte.",
+          "price": "63"
+        },
+        {
+          "name": "Risotto cu Hribi & Trufe",
+          "weight": "250 g",
+          "ingredients": "orez arborio (100 g), hribi (60 g), parmezan (30 g), unt (20 g), vin alb (20 g), pastă trufe (10 g)",
+          "description": "Risotto cremos cu aromă intensă de trufe.",
+          "price": "74"
+        }
+      ]
+    },
+    {
+      "title": "AROME ASIATICE",
+      "items": [
+        {
+          "name": "Noodles cu Pui & Legume Wok",
+          "weight": "350 g",
+          "ingredients": "noodles (120 g), pui (120 g), legume mix (80 g), ou (30 g), sos soia & stridii (20 g)",
+          "description": "Noodles wok cu pui și legume crocante.",
+          "price": "60"
+        },
+        {
+          "name": "Bowl cu Avocado& Somon",
+          "weight": "350 g",
+          "ingredients": "somon (120 g), avocado (80 g), edamame (40 g), legume (60 g), orez (30 g), soia & lime (20 g) , ghimbir (5 gr)",
+          "description": "Bowl fresh cu somon, avocado și note de ghimbir.",
+          "price": "58"
+        },
+        {
+          "name": "Poke Bowl cu Vită & Susan",
+          "weight": "350 g",
+          "ingredients": "vită (120 g), orez (120 g), ou (40 g), legume (50 g), soia & susan (20 g)",
+          "description": "Bowl echilibrat cu vită și influențe asiatice.",
+          "price": "60"
+        },
+        {
+          "name": "Vită Hong Kong in Sos de Stridii",
+          "weight": "300 g",
+          "ingredients": "vită (150 g), orez (100 g), sos stridii (20 g), ou (30 g), ciuperci (30 g), nuci caramelizate (20 g)",
+          "description": "Vită fragedă în sos asiatic intens, cu texturi crocante.",
+          "price": "72"
+        },
+        {
+          "name": "Curry Thai cu Pui & Lapte de Cocos",
+          "weight": "300 g",
+          "ingredients": "pui (120 g), orez (100 g), lapte cocos (60 g), legume (40 g), pastă curry (20 g)",
+          "description": "Curry cremos, aromat, cu influențe asiatice.",
+          "price": "56"
+        }
+      ]
+    },
+    {
+      "title": "JOSPER & GRILL",
+      "items": [
+        {
+          "name": "Smashed Burger cu Cheddar & Cartofi prajiti",
+          "weight": "400 g",
+          "ingredients": "vită (150 g), gauda (40 g), bacon/ceapă (40 g), legume (50 g), chiflă (80 g), cartofi (120 g)",
+          "description": "Burger suculent cu carne presată și cartofi crocanți.",
+          "price": "58"
+        },
+        {
+          "name": "Cheeseburger cu branza de capra & Cartofi Prajiti",
+          "weight": "400 g",
+          "ingredients": "vită (150 g), brânză capră (40 g), dulceață ardei (20 g), legume (50 g), cartofi prajiti(140 g)",
+          "description": "Burger intens, cu brânză de capră și accente dulci.",
+          "price": "65"
+        },
+        {
+          "name": "Antricot de Vită Angus la Josper",
+          "weight": "450 g",
+          "ingredients": "antricot (250 g), legume (120 g), sparanghel (50 g), sos (30 g)",
+          "description": "Antricot premium, gătit perfect, cu garnitură de legume.",
+          "price": "140"
+        },
+        {
+          "name": "Pulpă de Rață Confiată cu sos de portocala",
+          "weight": "400 g",
+          "ingredients": "pulpă rață (220 g), piure (120 g), sos portocală (40 g), legume (20 g)",
+          "description": "Rață fragedă cu piure cremos și sos aromat.",
+          "price": "81"
+        },
+        {
+          "name": "Mușchi de Berbecuț cu ciuperci & Sos de masline",
+          "weight": "280 g",
+          "ingredients": "berbecuț (160 g), ciuperci (60 g), sos măsline (40 g), unt (20 g)",
+          "description": "Berbecuț fraged cu sos intens de măsline.",
+          "price": "86"
+        },
+        {
+          "name": "Mușchi de Vită în Sos de Vin Roșu & Trufe",
+          "weight": "300 g",
+          "ingredients": "mușchi vită (180 g), piure (100 g), sos vin (40 g), trufe (10 g)",
+          "description": "Mușchi fin cu sos bogat de vin roșu.",
+          "price": "96"
+        },
+        {
+          "name": "Șnițel de Vită crocant cu chips de cartof dulce",
+          "weight": "400 g",
+          "ingredients": "vită (200 g), crustă panko (80 g), bacon (40 g), chips cartof dulce (80 g), maioneză (20 g)",
+          "description": "Șnițel crocant reinterpretat, cu accente moderne.",
+          "price": "75"
+        },
+        {
+          "name": "Kebab de Berbecuț cu bulgur & Tabbouleh",
+          "weight": "350 g",
+          "ingredients": "carne berbecuț (160 g), bulgur (120 g), legume (70 g)",
+          "description": "Kebab aromat servit cu bulgur și salată fresh.",
+          "price": "65"
+        },
+        {
+          "name": "Pastramă de Berbecut la Jar cu Cartofi Aurii & Salată de Vară",
+          "weight": "590 gr",
+          "ingredients": "de vară (roșii, castraveți, ceapă) – 150gMuștar / sos de hrean – 40g ,Pastramă de Berbecuț la Jar cu Cartofi Aurii & Salată de Vară. Muștar / sos de hrean – 40g",
+          "description": "Pastramă de berbecuț – 220g Cartofi aurii (cu usturoi & rozmarin) – 180g",
+          "price": "120"
+        }
+      ]
+    },
+    {
+      "title": "ALATURI",
+      "items": [
+        {
+          "name": "Piure de Cartofi cremos",
+          "weight": "200 g",
+          "ingredients": "cartofi (150 g), unt (20 g), lapte & smântână (30 g)",
+          "description": "Piure cremos, fin.",
+          "price": "22"
+        },
+        {
+          "name": "Cartofi Prăjiți cu telemea",
+          "weight": "180 g",
+          "ingredients": "cartofi (140 g), telemea (40 g)",
+          "description": "Cartofi crocanți cu brânză sărată.",
+          "price": "23"
+        },
+        {
+          "name": "Ciuperci Sote cu unt si usturoi",
+          "weight": "200 g",
+          "ingredients": "ciuperci (160 g), unt (20 g), usturoi (10 g), pătrunjel (10 g)",
+          "description": "Ciuperci sotate aromate.",
+          "price": "23"
+        },
+        {
+          "name": "Legume la Grill cu arome asiatice",
+          "weight": "250 g",
+          "ingredients": "mix legume (200 g), sos (30 g), condimente (20 g)",
+          "description": "Legume coapte cu arome asiatice.",
+          "price": "24"
+        },
+        {
+          "name": "Sparanghel cu Unt & Parmezan",
+          "weight": "150 g",
+          "ingredients": "sparanghel (120 g), unt (20 g), parmezan (10 g)",
+          "description": "Garnitură elegantă, fină.",
+          "price": "31"
+        }
+      ]
+    },
+    {
+      "title": "PESTE & OCEAN",
+      "items": [
+        {
+          "name": "Sea Bass cu legume coapte & Sos de midii",
+          "weight": "300 g",
+          "ingredients": "sea bass (180 g), legume (80 g), midii & sos (40 g)",
+          "description": "Pește fin cu legume coapte și sos delicat.",
+          "price": "82"
+        },
+        {
+          "name": "Ton în Crustă de Fistic & Orez aromat",
+          "weight": "300 g",
+          "ingredients": "ton (180 g), crustă nuci (40 g), orez (60 g), sos (20 g)",
+          "description": "Ton suculent în crustă crocantă.",
+          "price": "88"
+        },
+        {
+          "name": "Fructe de Mare in stil Mediteranean",
+          "weight": "600 g",
+          "ingredients": "mix fructe mare (350 g), legume (150 g), sos (100 g)",
+          "description": "Preparat generos, ideal pentru sharing.",
+          "price": "220"
+        },
+        {
+          "name": "Creveți Black Tiger in unt si usturoi",
+          "weight": "300 g",
+          "ingredients": "creveți (180 g), legume (80 g), unt & usturoi (40 g)",
+          "description": "Creveți suculenți la cuptor, aromatizați.",
+          "price": "85"
+        },
+        {
+          "name": "Creveți Saganaki cu Feta si rosii",
+          "weight": "300 g",
+          "ingredients": "creveți (160 g), feta (60 g), roșii (60 g), pâine (20 g)",
+          "description": "Creveți în sos de roșii cu feta.",
+          "price": "82"
+        },
+        {
+          "name": "Calamari Fritti cu sos picant",
+          "weight": "330 g",
+          "ingredients": "calamari (180 g), tempura (60 g), cartofi (70 g), sos (20 g) Descriere: Calamari crocanți, serviți cu sos picant.",
+          "description": "",
+          "price": "61"
+        }
+      ]
+    },
+    {
+      "title": "DULCE",
+      "items": [
+        {
+          "name": "Clătite Americane cu Mascarpone & Fructe",
+          "weight": "200 g",
+          "ingredients": "clătite (100 g), mascarpone (50 g), fructe (30 g), sirop (20 g)",
+          "description": "Desert pufos cu mascarpone și fructe.",
+          "price": "51"
+        },
+        {
+          "name": "Clătite Japoneze cu Caramel & Fistic",
+          "weight": "200 g",
+          "ingredients": "clătite (100 g), caramel (40 g), cremă fistic (30 g), fructe (30 g)",
+          "description": "Clătite aerate cu topping dulce intens.",
+          "price": "52"
+        },
+        {
+          "name": "Papanași cu dulceata si smantana",
+          "weight": "200 g",
+          "ingredients": "papanași (120 g), smântână (40 g), dulceață (40 g)",
+          "description": "Desert tradițional reinterpretat.",
+          "price": "41"
+        },
+        {
+          "name": "French Toast cu mascarpone & Fructe de padure",
+          "weight": "180 g",
+          "ingredients": "cozonac (100 g), mascarpone (40 g), fructe (40 g)",
+          "description": "French toast dulce, bogat și aromat.",
+          "price": "38"
+        },
+        {
+          "name": "Grand Café Biscuit Cake 300 gr",
+          "weight": "",
+          "ingredients": "Biscuiți – 100g Cremă cacao & unt – 120g Nuci / alune caramelizate – 30g Sos de ciocolată – 40g Decor (fulgi ciocolată / aur alimentar opțional) – 10g",
+          "description": "desert reinterpretat, cremos, cu textură fină și aspect modern",
+          "price": "42"
+        }
+      ]
+    },
+    {
+      "title": "PENTRU CEI MICI",
+      "items": [
+        {
+          "name": "Somon la Grătar cu legume",
+          "weight": "180 g",
+          "ingredients": "somon (120 g), legume (60 g)",
+          "description": "Somon simplu, cu legume.",
+          "price": "41"
+        },
+        {
+          "name": "Piept de Pui la grătar",
+          "weight": "160 g",
+          "ingredients": "pui (120 g), garnitură (40 g)",
+          "description": "Preparat simplu și echilibrat.",
+          "price": "33"
+        },
+        {
+          "name": "Risotto cremos cu legume",
+          "weight": "170 g",
+          "ingredients": "orez (100 g), legume (50 g), parmezan (20 g)",
+          "description": "Risotto cremos, adaptat copiilor.",
+          "price": "32"
+        },
+        {
+          "name": "Paste Tricolore cu sos rosu",
+          "weight": "200 g",
+          "ingredients": "paste (120 g), sos roșii (80 g)",
+          "description": "Paste simple cu sos de roșii.",
+          "price": "31"
+        }
+      ]
+    }
+  ],
+  "drinks": [
+    {
+      "title": "WHEN LIFE GIVES YOU LEMONS",
+      "items": [
+        {
+          "name": "Whiskey Sour",
+          "weight": "",
+          "ingredients": "",
+          "description": "The classic cocktail of balance, enjoyed by generations. Gramaj: 100 ml Pahar: rocks ● Jameson black barrel - 40 ml ● suc lămâie - 20 ml ● sirop zahăr - 20 ml ● albuş ou - 20 ml ● Angostura - 2 dash",
+          "price": "51"
+        },
+        {
+          "name": "Amaretto Sour",
+          "weight": "110 ml",
+          "ingredients": "",
+          "description": "During the 1970s and 80s, the Amaretto Sour was a staple of disco culture, now is a lifestyle Pahar: rocks ● Amaretto Disaronno 40 ml ● suc lămâie - 30 ml ● sirop zahăr - 20 ml ● albuș ou - 20 ml ● Angostura - 2 dash",
+          "price": "51"
+        },
+        {
+          "name": "Minority Sour",
+          "weight": "120 ml",
+          "ingredients": "",
+          "description": "A cocktail that doesn't ask for attention... it owns it. Pahar: rocks ● Havana 3 40 ml",
+          "price": "51"
+        },
+        {
+          "name": "Midori",
+          "weight": "",
+          "ingredients": "",
+          "description": "● shrub mango + ghimbir - 30 ml ● suc lime- 20 ml ● sirop zahăr - 10 ml ● albuş ou - 20 ml",
+          "price": "20"
+        }
+      ]
+    },
+    {
+      "title": "MAN OF CULTURE",
+      "items": [
+        {
+          "name": "Old Fashioned",
+          "weight": "60 ml",
+          "ingredients": "",
+          "description": "The classic cocktail of effortless sophistication. Pahar: rocks ● Jameson Black Barrel - 50 ml ● sirop zahăr - 10 ml ● Angostura - 2 dash ● orange bitters - 1 dash",
+          "price": "46"
+        },
+        {
+          "name": "Sazerac",
+          "weight": "75 ml",
+          "ingredients": "",
+          "description": "A classic New Orleans cocktail Pahar: rocks ● Martell VS - 30 ml ● Four Roses - 30 ml ● sirop zahăr - 10 ml ● Peychaud's Bitter- 3 dash ● Absinthe rinse - 5 ml",
+          "price": "56"
+        },
+        {
+          "name": "Manhattan",
+          "weight": "70 ml",
+          "ingredients": "",
+          "description": "Manhattan cocktail was created in the mid-1870s at the Manhattan Club in New York City Pahar: Cocktail glass ● Jameson Black Barrel - 50 ml ● Martini Rosso ● Angostura - 2 dash",
+          "price": "52"
+        },
+        {
+          "name": "Margarita",
+          "weight": "90 ml",
+          "ingredients": "",
+          "description": "As Herrera told it, the margarita began as an experiment when he tried to concoct something that would quench the thirst of a beautiful young showgirl named Marjorie King Pahar: Cocktail glass ● Olmec altos - 40 ml ● Marie Brizard Triple Sec - 20 ml ● suc lime- 20 ml ● sirop zahăr - 10 ml",
+          "price": "52"
+        },
+        {
+          "name": "Mezcalita",
+          "weight": "80 ml",
+          "ingredients": "",
+          "description": "The authentic Mexican spirit, deep and enigmatic. Pahar: rocks ● Del Maguey- 30 ml ● Marie Brizard Triple Sec10 ml ● suc lămâie - 30 ml ● sirop zahăr - 10 ml ● Angostura - 2 dash",
+          "price": "52"
+        },
+        {
+          "name": "Cosmopolitan",
+          "weight": "~110 ml",
+          "ingredients": "",
+          "description": "Sex in the city season 8 Pahar: Cocktail glass ● Absolut - 40 ml ● Marie Brizard triple sec - 20 ml ● suc lime- 20 ml ● sirop zahăr - 10 ml ● suc merişor - 20 ml",
+          "price": "49"
+        },
+        {
+          "name": "Espresso Martini",
+          "weight": "~100 ml",
+          "ingredients": "",
+          "description": "First wake me, then take me Pahar: Cocktail glass ● sirop cafea & ciocolată - 30 ml ● Absolut - 40 ml ● Kahlua - 20 ml ● sirop zahăr - 10 ml",
+          "price": "52"
+        }
+      ]
+    },
+    {
+      "title": "ORIGINS",
+      "items": [
+        {
+          "name": "Thyme Whisper",
+          "weight": "100 ml",
+          "ingredients": "",
+          "description": "Fresh thyme lingers softly, lifted by a crisp citrus note-clean, elegant, a little mysterious. It doesn't shout... it draws you in. Pahar: coupeta Garnish: cimbrișor ars ● Ki no bi - 50 ml ● borş - 30 ml ● yuzu puree - 20 ml ● Cimbrisor",
+          "price": "52"
+        },
+        {
+          "name": "Electrotherapy",
+          "weight": "130 ml",
+          "ingredients": "",
+          "description": "the use of electrical energy for medical treatment, Pahar: cească de ceai Garnish: frunză de busuioc frunze busuioc - 8",
+          "price": "58"
+        },
+        {
+          "name": "Monkey",
+          "weight": "50 ml",
+          "ingredients": "",
+          "description": "● Green Chartreuse - 20 ml ● suc lime - 30 ml ● sirop zahăr - 10 ml ● albuș ou - 20 ml",
+          "price": "47"
+        },
+        {
+          "name": "Fortune Cookie",
+          "weight": "80 ml",
+          "ingredients": "",
+          "description": "Every cocktail comes with its own little prophecy. Pahar: rocks Garnish: fortune cookie ● Havana 7 – 40 ml ● Green Chartreuse - 20 ml ● Grand Marnier - 20 ml",
+          "price": "58"
+        },
+        {
+          "name": "Paradise Punch",
+          "weight": "130 ml",
+          "ingredients": "",
+          "description": "Sun-soaked tropical fruits in a vibrant, unforgettable sip. Pahar: rocks Garnish: frunze de bambus ● Havana 3 - 40 ml ● Midori - 20 ml ● shrub ananas - 30 ml ● suc lime- 20 ml ● albuș ou - 20 ml",
+          "price": "52"
+        },
+        {
+          "name": "Zesty Mang Ooh",
+          "weight": "150 ml",
+          "ingredients": "",
+          "description": "Bold, bright, and exquisitely smooth — a sip of tropical luxury. Pahar: rickey Garnish: piele de mango deshidratată ● Absolut - 40 ml ● Archers - 20 ml ● shrub mango + ghimbir - 20 ml ● suc lime - 30 ml ● ginger beer - top",
+          "price": "52"
+        },
+        {
+          "name": "Pornhub",
+          "weight": "80 ml",
+          "ingredients": "",
+          "description": "We all been there Pahar: cupă cocktail Garnish: spumă din puree de fructe + vin ● Absolut - 40 ml ● Passoa - 10 ml ● sirop vanilie - 10 ml ● puree fructul pasiunii - 10 ml ● Fresh lamaie 10 ml",
+          "price": "51"
+        },
+        {
+          "name": "Margarita Clara",
+          "weight": "105 ml",
+          "ingredients": "",
+          "description": "Unalome A contradiction between past present and future Pahar: cupă cocktail ● Avion silver- 40 ml ● soluție citrica - 25 ml ● Cointreau 15 ml ● cordial mentă - 10 ml ● Angostura - 2 dash",
+          "price": "52"
+        }
+      ]
+    },
+    {
+      "title": "SHAKEN OR STIRRED",
+      "items": [
+        {
+          "name": "The Martini",
+          "weight": "~70 ml",
+          "ingredients": "",
+          "description": "Over time, Martini has become the definition of elegance in a glass, adopted and reinterpreted by generations. Pahar: cupeta ● Monkey 47 sau Absolut- 50 ml ● Martini Dry- 20 ml ● orange bitters - 2 dash",
+          "price": "49"
+        },
+        {
+          "name": "Mi-To",
+          "weight": "~60 ml",
+          "ingredients": "",
+          "description": "A precursor to the famous Negroni, born from the Italian aperitivo tradition. Pahar: rocks ● Campari - 30 ml ● Martini Rosso- 30 ml ● Angostura - 2 dash",
+          "price": "49"
+        }
+      ]
+    },
+    {
+      "title": "FRESH & EFFERVESCENT",
+      "items": [
+        {
+          "name": "French 75",
+          "weight": "~140 ml",
+          "ingredients": "",
+          "description": "Created during the First World War, named after the French 75 mm gun - just as powerful, but much more refined.\" Pahar: fluta ● Monkey- 40 ml ● suc lămâie - 20 ml ● sirop zahăr - 20 ml ● Serena Prosecco- top",
+          "price": "52"
+        },
+        {
+          "name": "Moscow Mule",
+          "weight": "~160 ml",
+          "ingredients": "",
+          "description": "Born in 1940s America, it became iconic thanks to the copper mug and its fresh character. Pahar: cană copper mug / highball ● Absolut - 40 ml ● suc lămâie - 20 ml ● ginger beer - 100 ml",
+          "price": "49"
+        },
+        {
+          "name": "Dark 'N' Stormy",
+          "weight": "~150 ml",
+          "ingredients": "",
+          "description": "Originally from Bermuda, it evokes tropical storms and rough seas. Pahar: highball ● Havana 7 - 50 ml ● ginger beer - 100 ml ● Angostura - 2 dash",
+          "price": "51"
+        },
+        {
+          "name": "Southside Rickey",
+          "weight": "~150 ml",
+          "ingredients": "",
+          "description": "Inspired by American culture of the early 20th century, an urban summer cocktail. Pahar: highball",
+          "price": "52"
+        },
+        {
+          "name": "Monkey",
+          "weight": "50 ml",
+          "ingredients": "",
+          "description": "● suc lămâie - 25 ml ● sirop zahăr - 15 ml ● mentă - 8 frunze ● apă minerală - top",
+          "price": "47"
+        }
+      ]
+    },
+    {
+      "title": "CONTEMPORARY CLASSICS",
+      "items": [
+        {
+          "name": "Daiquiri",
+          "weight": "~85 ml",
+          "ingredients": "",
+          "description": "A study in perfect balance Pahar: coupeta ● Havana 7 - 50 ml ● suc lime - 25 ml ● sirop zahăr - 10 ml",
+          "price": "52"
+        },
+        {
+          "name": "Paloma",
+          "weight": "",
+          "ingredients": "",
+          "description": "\"She has a heart as gentle and beautiful as a white dove.\"",
+          "price": "55"
+        },
+        {
+          "name": "Gramaj:",
+          "weight": "",
+          "ingredients": "",
+          "description": "Pahar collins ● 40 Olmeca Altos ● 10 ml fresh ● 130 top 3 cents pink soda",
+          "price": "180"
+        },
+        {
+          "name": "Bee's Knees",
+          "weight": "~90 ml",
+          "ingredients": "",
+          "description": "A symbol of the Prohibition era, when honey was used to refine the taste of alcohol. Pahar: cupă cocktail",
+          "price": "49"
+        },
+        {
+          "name": "Monkey",
+          "weight": "50 ml",
+          "ingredients": "",
+          "description": "● suc lămâie - 25 ml ● sirop miere - 15 ml",
+          "price": "47"
+        },
+        {
+          "name": "Last Word",
+          "weight": "~100 ml",
+          "ingredients": "",
+          "description": "Rediscovered in the modern era, this Prohibition-era cocktail has become a favorite among connoisseurs. Pahar: cupă cocktail",
+          "price": "58"
+        },
+        {
+          "name": "Monkey",
+          "weight": "30 ml",
+          "ingredients": "",
+          "description": "● Green Chartreuse - 20 ml ● Luxardo Maraschino - 20 ml ● suc lime - 30 ml",
+          "price": "47"
+        },
+        {
+          "name": "Bijou",
+          "weight": "~70 ml",
+          "ingredients": "",
+          "description": "The name means \"jewel,\" with each ingredient representing a precious stone in the composition. Pahar: cupă cocktail",
+          "price": "52"
+        },
+        {
+          "name": "Monkey",
+          "weight": "40 ml",
+          "ingredients": "",
+          "description": "● Martini rosso - 20 ml ● Green Chartreuse - 10 ml ● orange bitters - 2 dash",
+          "price": "47"
+        }
+      ]
+    },
+    {
+      "title": "APERITIVO CULTURE",
+      "items": [
+        {
+          "name": "Negroni",
+          "weight": "~90 ml",
+          "ingredients": "",
+          "description": "Born in Florence, it remains one of the most respected cocktails in the world. Pahar: rocks ● Campari - 30 ml",
+          "price": "52"
+        },
+        {
+          "name": "Monkey",
+          "weight": "30 ml",
+          "ingredients": "",
+          "description": "● Martini Rosso - 30 ml",
+          "price": "47"
+        },
+        {
+          "name": "Boulevardier",
+          "weight": "~90 ml",
+          "ingredients": "",
+          "description": "Created for Americans in Paris in the 1920s, a symbol of expatriate elegance. Pahar: rocks ● Four roses - 30 ml ● Martini Rosso - 30 ml ● Campari - 30 ml",
+          "price": "52"
+        },
+        {
+          "name": "Americano",
+          "weight": "~120 ml",
+          "ingredients": "",
+          "description": "A precursor to the Negroni, popular among Americans in Europe. Pahar: rocks ● Campari - 30 ml ● Martini Rosso - 30 ml ● apă minerală - top",
+          "price": "50"
+        },
+        {
+          "name": "Sbagliato",
+          "weight": "~120 ml",
+          "ingredients": "",
+          "description": "The \"happy mistake\" that replaced gin with Prosecco, becoming a modern classic. Pahar: rocks / wine glass ● Campari - 30 ml ● Martini Rosso - 30 ml ● Prosecco - 30 ml",
+          "price": "50"
+        }
+      ]
+    },
+    {
+      "title": "SPRITZERS",
+      "items": [
+        {
+          "name": "Hugo",
+          "weight": "~160 ml",
+          "ingredients": "",
+          "description": "Born in the Italian Alps, it evokes the freshness of mountain air and refined simplicity. Pahar: pahar vin ● sirop soc - 20 ml ● Prosecco - 100 ml ● lime ● mentă ● apă minerală - 30 ml",
+          "price": "53"
+        },
+        {
+          "name": "Aperol Spritz",
+          "weight": "~180 ml",
+          "ingredients": "",
+          "description": "A symbol of the Italian lifestyle, dedicated to moments of relaxation. Pahar: pahar vin ● Aperol - 60 ml ● Prosecco - 90 ml ● apă minerală - 30 ml",
+          "price": "53"
+        },
+        {
+          "name": "Amèrie Spritz",
+          "weight": "~180 ml",
+          "ingredients": "",
+          "description": "A modern interpretation of the classic spritz, with a distinct romantic touch. Pahar: pahar vin ● Amèrie - 50 ml ● Prosecco 100 ml ● apă minerală - 30 ml ● parfum trandafir",
+          "price": "53"
+        },
+        {
+          "name": "Mimosa",
+          "weight": "",
+          "ingredients": "",
+          "description": "When life gives you oranges, add prosecco",
+          "price": "54"
+        },
+        {
+          "name": "Gramaj",
+          "weight": "",
+          "ingredients": "",
+          "description": "Pahar coupeta",
+          "price": "180"
+        },
+        {
+          "name": "Prosecco",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "150"
+        },
+        {
+          "name": "Suc portocale",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        }
+      ]
+    },
+    {
+      "title": "NON-ALCOHOLICS",
+      "items": [
+        {
+          "name": "Everything Under the Sky",
+          "weight": "120 ml",
+          "ingredients": "",
+          "description": "A promise to yourself Pahar: highball ● shrub mango + ghimbir - 40 ml ● suc lime - 40 ml ● apă minerală - top ● Angostura - 2 dash",
+          "price": "32"
+        },
+        {
+          "name": "Pineapple Apple Pen",
+          "weight": "120 ml",
+          "ingredients": "",
+          "description": "I have a pen, i have an apple Pahar: highball ● shrub ananas - 40 ml ● suc lime - 40 ml ● suc mere - top ● Angostura - 2 dash",
+          "price": "32"
+        }
+      ]
+    },
+    {
+      "title": "CAFEA",
+      "items": [
+        {
+          "name": "Espresso",
+          "weight": "30 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Espresso doppio",
+          "weight": "30 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "21"
+        },
+        {
+          "name": "Ristretto",
+          "weight": "20ml",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Americano",
+          "weight": "180ml",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Long black",
+          "weight": "160ml",
+          "ingredients": "",
+          "description": "",
+          "price": "21"
+        },
+        {
+          "name": "Espresso macchiato",
+          "weight": "45 ml",
+          "ingredients": "",
+          "description": "● 30 cafea ● 15 lapte",
+          "price": "19"
+        },
+        {
+          "name": "Cortado",
+          "weight": "100 ml",
+          "ingredients": "",
+          "description": "● 50 cafea ● 50 lapte",
+          "price": "19"
+        },
+        {
+          "name": "Cappuccino",
+          "weight": "180 ml",
+          "ingredients": "",
+          "description": "● 30 cafea ● 150 lapte",
+          "price": "19"
+        },
+        {
+          "name": "Flat white",
+          "weight": "180 ml",
+          "ingredients": "",
+          "description": "● 60 cafea ● 120 lapte",
+          "price": "21"
+        },
+        {
+          "name": "Caffe latte",
+          "weight": "270 ml",
+          "ingredients": "",
+          "description": "● 30 ml cafea ● 240 lapte",
+          "price": "23"
+        },
+        {
+          "name": "Latte macchiato",
+          "weight": "300 ml",
+          "ingredients": "",
+          "description": "● 30 cafea ● 270 lapte",
+          "price": "23"
+        },
+        {
+          "name": "Matcha latte",
+          "weight": "250 ml",
+          "ingredients": "",
+          "description": "● 2 gr pudra matcha ● 30 ml apa ● 220 ml lapte",
+          "price": "30"
+        },
+        {
+          "name": "Pink latte",
+          "weight": "250 ml",
+          "ingredients": "",
+          "description": "● 2gr pudra sfecla ● 30 ml apa ● 220 lapte",
+          "price": "30"
+        },
+        {
+          "name": "Affogato",
+          "weight": "110 ml",
+          "ingredients": "",
+          "description": "● 60 ml îngheţată ● 50 ml cafea",
+          "price": "30"
+        },
+        {
+          "name": "Iced latte",
+          "weight": "270 ml",
+          "ingredients": "",
+          "description": "● 30 ml cafea ● 190 ml lapte ● 50 gr gheață",
+          "price": "22"
+        },
+        {
+          "name": "Espresso tonic",
+          "weight": "220 ml",
+          "ingredients": "",
+          "description": "● 30 ml cafea ● 150 ml apa tonica ● 40 gr gheață",
+          "price": "29"
+        },
+        {
+          "name": "Cold brew",
+          "weight": "250 ml",
+          "ingredients": "",
+          "description": "● 200ml cafea ● 50 gheață",
+          "price": "29"
+        },
+        {
+          "name": "Cold brew oreo latte",
+          "weight": "280 ml",
+          "ingredients": "",
+          "description": "● 80 Coldbrew ● 150 lapte ● 50 gr gheață ● 14 gr biscuiți oreo",
+          "price": "29"
+        }
+      ]
+    },
+    {
+      "title": "LEMONADES & FRESH",
+      "items": [
+        {
+          "name": "Ginger & honey",
+          "weight": "350 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Mint",
+          "weight": "350 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Classic",
+          "weight": "350 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Strawberries",
+          "weight": "350 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Cucumber",
+          "weight": "350 ml",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Fresh orange",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "31"
+        },
+        {
+          "name": "Fresh grapefruit",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "31"
+        },
+        {
+          "name": "Fresh mix",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "31"
+        }
+      ]
+    },
+    {
+      "title": "WHISKEY",
+      "items": [
+        {
+          "name": "Chivas 12",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Chivas 15",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "35"
+        },
+        {
+          "name": "Chivas 18",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "50"
+        },
+        {
+          "name": "Chivas 21",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "90"
+        },
+        {
+          "name": "Glenlivet 12",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        },
+        {
+          "name": "Glenlivet 15",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "38"
+        },
+        {
+          "name": "Glenlivet 18",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "46"
+        },
+        {
+          "name": "Aberlour 14",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "38"
+        },
+        {
+          "name": "Aberlour 16",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "48"
+        },
+        {
+          "name": "Fuji",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "55"
+        },
+        {
+          "name": "Jameson",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "26"
+        },
+        {
+          "name": "Jameson Black Barrel",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "36"
+        },
+        {
+          "name": "Four Roses",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Deacon",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "38"
+        }
+      ]
+    },
+    {
+      "title": "VODKA",
+      "items": [
+        {
+          "name": "Absolut",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "26"
+        },
+        {
+          "name": "Absolut Elyx",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "37"
+        },
+        {
+          "name": "Ostoya",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        },
+        {
+          "name": "Beluga",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "50"
+        },
+        {
+          "name": "Belvedere",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "48"
+        }
+      ]
+    },
+    {
+      "title": "RUM",
+      "items": [
+        {
+          "name": "Havana 3",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Havana 7",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "32"
+        },
+        {
+          "name": "Havana Maestro",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "38"
+        },
+        {
+          "name": "Don Navarro",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "45"
+        },
+        {
+          "name": "Bumbu",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        },
+        {
+          "name": "Bumbu XO",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "38"
+        },
+        {
+          "name": "Bumbu Cream",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "La Hechicera",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "55"
+        }
+      ]
+    },
+    {
+      "title": "TEQUILA / MEZCAL",
+      "items": [
+        {
+          "name": "Olmeca Altos",
+          "weight": "",
+          "ingredients": "",
+          "description": "● Olmeca Reposado 28 ei",
+          "price": "28"
+        },
+        {
+          "name": "Del Maguey",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "55"
+        },
+        {
+          "name": "Avion Silver",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "35"
+        },
+        {
+          "name": "Avion Reposado",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "35"
+        },
+        {
+          "name": "Avion 44",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "120"
+        }
+      ]
+    },
+    {
+      "title": "COGNAC",
+      "items": [
+        {
+          "name": "Martell VS",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "32"
+        },
+        {
+          "name": "Martell VSOP",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "45"
+        },
+        {
+          "name": "Martell XO",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "75"
+        },
+        {
+          "name": "Martell Blue Swift",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "75"
+        }
+      ]
+    },
+    {
+      "title": "DIGESTIVE",
+      "items": [
+        {
+          "name": "Amaro del Capo",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Ramazzotti Limoncello",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Ramazzotti Sambuca",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Ramazotti Amaro",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "26"
+        },
+        {
+          "name": "Antica Formula",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "35"
+        },
+        {
+          "name": "Branca Menta",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Martini",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Grappa",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "40"
+        }
+      ]
+    },
+    {
+      "title": "LIQUEUR",
+      "items": [
+        {
+          "name": "Carolans",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Marie Brizard",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Kahlua",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Absint",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "40"
+        },
+        {
+          "name": "Aperol",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Amerie",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Midori",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Green Chartreuse",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "45"
+        },
+        {
+          "name": "Sake",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        }
+      ]
+    },
+    {
+      "title": "GIN",
+      "items": [
+        {
+          "name": "Ceders (non-alc)",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Malfy Originale / Rosa /Arancia/Limone",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "39"
+        },
+        {
+          "name": "Whitley Neill Rhubarb/ Quince",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "39"
+        },
+        {
+          "name": "Monkey 47",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "39"
+        },
+        {
+          "name": "McQueen Violet Fog",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "40"
+        },
+        {
+          "name": "Ki No Bi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "45"
+        }
+      ]
+    },
+    {
+      "title": "BEER",
+      "items": [
+        {
+          "name": "Carlsberg",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Carlsberg n/a",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Bucur Blond",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "25"
+        },
+        {
+          "name": "Bucur Draught",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "25"
+        },
+        {
+          "name": "Bucur Black",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "25"
+        },
+        {
+          "name": "Guinness 0.33",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "35"
+        },
+        {
+          "name": "Grimbergen",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        },
+        {
+          "name": "Kronenburg blanc",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Kronenburg Blanc Draught",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "29"
+        },
+        {
+          "name": "Winstefaner",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "30"
+        },
+        {
+          "name": "Somersby mere/pere/afine/mure",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        }
+      ]
+    },
+    {
+      "title": "SOFT DRINKS",
+      "items": [
+        {
+          "name": "Pepsi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Pepsi Max",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Mirinda",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "7up",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Evervess",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Evervess Bitter Lemon",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Lipton lemon/peach",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "Granini",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "18"
+        },
+        {
+          "name": "3 cents pink lemonade",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Red bull",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        },
+        {
+          "name": "Aqua Carpatica plata/minerala 0.33",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "16"
+        },
+        {
+          "name": "Aqua Carpatica Plata /Minerala 0.75",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "28"
+        },
+        {
+          "name": "Ceders (non-alc)",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "24"
+        }
+      ]
+    },
+    {
+      "title": "LONG DRINKS",
+      "items": [
+        {
+          "name": "Absolut&Juice",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "44"
+        },
+        {
+          "name": "Absolut Redbull",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "48"
+        },
+        {
+          "name": "Absolut Elyx & Juice",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "55"
+        },
+        {
+          "name": "Absolut Elyx & Red Bull",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "58"
+        },
+        {
+          "name": "Ostoya&Juice",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "48"
+        },
+        {
+          "name": "Ostoya RedBull",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "55"
+        },
+        {
+          "name": "Beluga&Juice",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "64"
+        },
+        {
+          "name": "Beluga RedBull",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "68"
+        },
+        {
+          "name": "Belvedere&Juice",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "64"
+        },
+        {
+          "name": "Belvedere RedBull",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "68"
+        },
+        {
+          "name": "Ceders&Tonic",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "44"
+        },
+        {
+          "name": "Malfy Originale/Rosa/Arancia/Limone&Tonic",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "57"
+        },
+        {
+          "name": "Whitley Neill Rhubarb/Quince&Tonic",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "57"
+        },
+        {
+          "name": "Monkey 47 Tonic",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "57"
+        },
+        {
+          "name": "McQueen Violet Fog Tonic",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "58"
+        },
+        {
+          "name": "Ki No Bi Tonic",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "63"
+        },
+        {
+          "name": "Havana 3 & Pepsi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "44"
+        },
+        {
+          "name": "Havana 7& Pepsi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "50"
+        },
+        {
+          "name": "Havana Maestro& Pepsi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "56"
+        },
+        {
+          "name": "Bumbu& Pepsi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "48"
+        },
+        {
+          "name": "Bumbu XO& Pepsi",
+          "weight": "",
+          "ingredients": "",
+          "description": "",
+          "price": "56"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2918 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Grand Cafe Bucharest Menu</title>
+  <style>
+    @page {
+      size: 186mm 251mm;
+      margin: 0;
+      background: #fbf8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: #1f1a16;
+      background: #fbf8f0;
+      font-family: Georgia, "Times New Roman", serif;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .cover {
+      position: relative;
+      display: grid;
+      min-height: 251mm;
+      place-items: center;
+      text-align: center;
+      break-after: page;
+      padding: 24mm 22mm;
+      overflow: hidden;
+      background: #fbf8f0;
+    }
+
+    .cover::before,
+    .cover::after,
+    .divider::before,
+    .divider::after {
+      position: absolute;
+      color: rgba(155, 116, 76, .24);
+      font: italic 74px Georgia, "Times New Roman", serif;
+      line-height: 1;
+      content: "S";
+    }
+
+    .cover::before,
+    .divider::before {
+      top: 7mm;
+      left: 7mm;
+      transform: rotate(-18deg);
+    }
+
+    .cover::after,
+    .divider::after {
+      right: 7mm;
+      bottom: 5mm;
+      transform: rotate(162deg);
+    }
+
+    .cover-inner,
+    .divider > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .photo-frame {
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18mm;
+      background:
+        linear-gradient(rgba(31, 26, 22, .08), rgba(31, 26, 22, .08)),
+        linear-gradient(90deg, rgba(155, 116, 76, .08) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(155, 116, 76, .08) 1px, transparent 1px),
+        #d8cfc0;
+      background-size: 9mm 9mm;
+    }
+
+    .photo-frame.large {
+      width: 122mm;
+      height: 64mm;
+    }
+
+    .photo-frame.small {
+      width: 112mm;
+      height: 56mm;
+      margin-bottom: 14mm;
+    }
+
+    .cover p {
+      margin: 0 0 18px;
+      color: #8f6d45;
+      font: 700 12px Arial, sans-serif;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .cover h1 {
+      margin: 0;
+      color: #9b744c;
+      font-size: 46px;
+      font-weight: 400;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .cover h1 span {
+      display: block;
+    }
+
+    .divider {
+      position: relative;
+      display: grid;
+      min-height: 251mm;
+      place-items: center;
+      align-content: center;
+      text-align: center;
+      break-before: page;
+      break-after: page;
+      padding: 24mm 22mm;
+      overflow: hidden;
+      background: #fbf8f0;
+    }
+
+    .divider p {
+      margin: 0 0 6mm;
+      color: #8f6d45;
+      font: 700 12px Arial, sans-serif;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+
+    .divider h1 {
+      margin: 0;
+      color: #9b744c;
+      font-size: 36px;
+      font-weight: 400;
+      letter-spacing: .08em;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .group {
+      min-height: 251mm;
+      padding: 12mm 11mm;
+      background: #fbf8f0;
+      break-after: page;
+    }
+
+    .group h1 {
+      margin: 0 0 8mm;
+      color: #7d1232;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .columns {
+      column-count: 2;
+      column-gap: 10mm;
+    }
+
+    .menu-section {
+      margin: 0 0 7mm;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .menu-section h2 {
+      margin: 0 0 2.5mm;
+      padding-bottom: 1.5mm;
+      border-bottom: 1px solid #d9c7ac;
+      color: #9b744c;
+      font: 700 12px Arial, sans-serif;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .item {
+      margin: 0 0 3mm;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .item-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 4mm;
+      align-items: baseline;
+    }
+
+    .item h3 {
+      margin: 0;
+      font-size: 11.2px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .item h3 span {
+      color: #776b61;
+      font: 400 9px Arial, sans-serif;
+      white-space: nowrap;
+    }
+
+    .item strong {
+      color: #7d1232;
+      font: 700 10px Arial, sans-serif;
+      white-space: nowrap;
+    }
+
+    .description,
+    .ingredients {
+      margin: 1mm 0 0;
+      color: #62564d;
+      font: 8.6px/1.35 Arial, sans-serif;
+    }
+
+    .ingredients {
+      color: #4c443e;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <section class="cover">
+    <div class="cover-inner">
+      <div class="photo-frame large"></div>
+      <p>Full Menu</p>
+      <h1><span>Grand Cafe</span><span>Bucharest</span></h1>
+    </div>
+  </section>
+  
+      
+      <section class="group">
+        <h1>Food</h1>
+        <div class="columns">
+          
+      <section class="menu-section">
+        <h2>MIC DEJUN &amp; OUA</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Mic Dejun Grand <span>400 g</span></h3>
+          <strong>120 lei</strong>
+        </div>
+        <p class="description">Selecție completă de mic dejun cu brânzeturi fine, prosciutto și elemente dulci.</p>
+        <p class="ingredients">ouă fierte (100 g), emmentaler (40 g), dulceață (25 g), unt (20 g), croissant (60 g), prosciutto cotto (50 g), iaurt (70 g), nuci (35 g), brie (30 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ou Poșat cu Spanac &amp; Feta <span>350 g</span></h3>
+          <strong>42 lei</strong>
+        </div>
+        <p class="description">Spanac sotat, roșii și feta, completate de un ou poșat cremos.</p>
+        <p class="ingredients">spanac (120 g), roșii cherry (60 g), feta (50 g), ou poșat (60 g), unt (20 g), pâine (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Shakshuka cu Brânză de Capră &amp; Harissa <span>350 g</span></h3>
+          <strong>41 lei</strong>
+        </div>
+        <p class="description">Ouă în sos de roșii coapte, cu brânză de capră și accente ușor picante.</p>
+        <p class="ingredients">roșii coapte (170 g), ou (60 g), brânză de capră (50 g), harissa (15 g), ceapă &amp; usturoi (25 g), pâine (30 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cartofi Rustici cu Ouă &amp; Telemea <span>300 g</span></h3>
+          <strong>39 lei</strong>
+        </div>
+        <p class="description">Cartofi copți cu legume și ouă, completați de telemea maturată.</p>
+        <p class="ingredients">cartofi copți (130 g), ouă (100 g), telemea (60 g), ceapă (20 g), usturoi (10 g), dovlecei (30 g), ciuperci (30 g), ardei gras (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ouă Benedict cu Prosciutto <span>250 g</span></h3>
+          <strong>42 lei</strong>
+        </div>
+        <p class="description">Clasic reinterpretat cu sos olandez cremos și prosciutto.</p>
+        <p class="ingredients">brioșă (70 g), prosciutto cotto (50 g), ou poșat (60 g), sos olandez (70 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Croissant cu Avocado &amp; Somon Afumat <span>250 g</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">Combinație fresh de avocado și somon afumat pe bază crocantă.</p>
+        <p class="ingredients">croissant (80 g), avocado (70 g), somon afumat (60 g), roșii (20 g), ceapă (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pita Caldă cu Ou &amp; Brânză maturata <span>350 g</span></h3>
+          <strong>43 lei</strong>
+        </div>
+        <p class="description">Pita caldă umplută cu ou și brânză intensă, cu note dulci de ceapă.</p>
+        <p class="ingredients">pita (120 g), ou (80 g), brânză învechită (70 g), ceapă caramelizată (80 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Omletă cu Jumări &amp; Brânză maturata <span>300 g</span></h3>
+          <strong>43 lei</strong>
+        </div>
+        <p class="description">Omletă consistentă cu jumări crocante și brânză maturată.</p>
+        <p class="ingredients">ouă (120 g), jumări (70 g), brânză învechită (60 g), castraveți murați (30 g), ardei copt (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Toast cu Conopidă Coaptă &amp; Avocado <span>300 g</span></h3>
+          <strong>42 lei</strong>
+        </div>
+        <p class="description">Preparat vegetal aromat, cu texturi contrastante și ou poșat.</p>
+        <p class="ingredients">conopidă (120 g), avocado (70 g), ou poșat (60 g), ceapă murată (20 g), usturoi &amp; curcuma (10 g), pâine (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Frittata cu Spanac &amp; Sos de Iaurt <span>250 g</span></h3>
+          <strong>39 lei</strong>
+        </div>
+        <p class="description">Frittata aerată cu verdețuri și sos răcoritor de iaurt.</p>
+        <p class="ingredients">ou (120 g), spanac (60 g), broccoli (40 g), usturoi (10 g), coriandru &amp; mentă (10 g), sos iaurt (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ouă Scramble cu Avocado &amp; Salată <span>250 g</span></h3>
+          <strong>39 lei</strong>
+        </div>
+        <p class="description">Ouă cremoase cu avocado și salată fresh.</p>
+        <p class="ingredients">ouă (120 g), brânză (40 g), avocado (50 g), cherry (20 g), salată (10 g), ceapă verde (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Granola crocanta cu Iaurt &amp; Fructe <span>300 g</span></h3>
+          <strong>38 lei</strong>
+        </div>
+        <p class="description">Granola crocantă cu iaurt și fructe de sezon.</p>
+        <p class="ingredients">ovăz &amp; orz (120 g), alune &amp; nuci (50 g), stafide (20 g), miere (20 g), zahăr (10 g), iaurt (60 g), fructe (20 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>BRUNCH URBAN</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Club Sandwich cu pui &amp; Bacon <span>250 g</span></h3>
+          <strong>45 lei</strong>
+        </div>
+        <p class="description">Sandwich clasic cu pui, bacon și ou, echilibrat și consistent.</p>
+        <p class="ingredients">toast (80 g), bacon (50 g), roșii (30 g), ou (50 g), castraveți murați (20 g), capere (10 g), piept de pui (60 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ciabatta cu Pui Crocant &amp; Sos BBQ <span>280 g</span></h3>
+          <strong>44 lei</strong>
+        </div>
+        <p class="description">Ciabatta crocantă cu pui suculent și sosuri aromate.</p>
+        <p class="ingredients">pâine (90 g), pui în crustă (100 g), maioneză (30 g), sos barbeque (20 g), salată</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Croque Madame cu Branzeturi fine <span>270 g</span></h3>
+          <strong>48 lei</strong>
+        </div>
+        <p class="description">Sandwich franțuzesc bogat, cu brânzeturi fine și ou.</p>
+        <p class="ingredients">toast (90 g), prosciutto cotto (60 g), emmentaler (40 g), gorgonzola (30 g), parmezan (20 g), ou (30 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>SUPE &amp; CREME</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Supa de sezon <span>300 g</span></h3>
+          <strong>32 lei</strong>
+        </div>
+        <p class="description">Supă proaspătă, în funcție de selecția zilnică.</p>
+        <p class="ingredients">preparat zilnic din ingrediente de sezon (300 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>SALATE &amp; FRESH</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Salată Picantă cu Creveti <span>300 g</span></h3>
+          <strong>59 lei</strong>
+        </div>
+        <p class="description">Creveți crocanți cu influențe asiatice și note picante.</p>
+        <p class="ingredients">creveți (120 g), salată (60 g), maioneză (30 g), sriracha (10 g), tempura (30 g), kimchi (20 g), soia (10 g), lime (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Salată cu Rață Crocantă &amp;Rodie <span>300 g</span></h3>
+          <strong>62 lei</strong>
+        </div>
+        <p class="description">Rață crocantă cu accente fresh și dulci-acrișoare.</p>
+        <p class="ingredients">pulpă de rață (120 g), salată (50 g), apio (20 g), rodie (20 g), măr verde (30 g), tempura (20 g), susan (10 g), soia (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Salată de Caracatiță cu cartofi Baby <span>300 g</span></h3>
+          <strong>75 lei</strong>
+        </div>
+        <p class="description">Caracatiță fragedă cu legume și arome mediteraneene.</p>
+        <p class="ingredients">caracatiță (120 g), cartof baby (80 g), spanac (30 g), roșii cherry (30 g), unt (10 g), usturoi (10 g), țelină murată (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Salată cuVita &amp; Cartof Dulce copt <span>350 g</span></h3>
+          <strong>59 lei</strong>
+        </div>
+        <p class="description">Combinație echilibrată de vită, dulce și cremos.</p>
+        <p class="ingredients">cartof dulce (120 g), vită (120 g), iaurt (40 g), usturoi (10 g), miere (10 g), ciuperci shimeji (30 g), salată (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Salată Asiatică cu Vită &amp; Susan <span>350 g</span></h3>
+          <strong>61 lei</strong>
+        </div>
+        <p class="description">Salată intensă, cu influențe asiatice și vită fragedă.</p>
+        <p class="ingredients">vită (130 g), edamame (40 g), morcov (30 g), ardei (30 g), ciuperci (30 g), ghimbir &amp; usturoi (15 g), soia &amp; sos stridii (20 g), susan (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Crudités de legume cu Sos Fondue de branzeturi <span>350 g</span></h3>
+          <strong>54 lei</strong>
+        </div>
+        <p class="description">Legume fresh cu sos fondue cremos din brânzeturi fine.</p>
+        <p class="ingredients">morcovi (60 g), broccoli (60 g), țelină (40 g), sparanghel (40 g), gauda (40 g), smântână (40 g), gorgonzola (30 g), brie (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Grand Café Romanian Tasting Board <span>1.290gr</span></h3>
+          <strong>160 lei</strong>
+        </div>
+        <p class="description">Selecție rafinată de brânzeturi și mezeluri românești artizanale, servite cu zacuscă, vinete, ardei copți și pâine rustică. Ideal pentru 2 persoane.</p>
+        <p class="ingredients">Brânză maturată de tip burduf reinterpretat (cremos, servit în vas) – 120g Cașcaval afumat premium – 100g Brânză de capră rulată în ierburi – 100g Salam de Sibiu selecție fină – 80g Mușchi file maturat – 80g Pastramă de vită slow-cooked, feliată subțire – 100g Zacuscă artizanală (servită individual) – 100g Salată de vinete fină, cu ulei de măsline – 120g Ardei copți marinați – 120g Mix roșii cherry premium – 150g Ceapă roșie &amp; microgreens – 40g Pâine rustică + focaccia de casă – 180g</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>APERITIVE FINE</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Burrata cu Ardei Copți &amp; Nuci <span>250 g</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">Burrata cremoasă cu accente dulci și crocante.</p>
+        <p class="ingredients">burrata (125 g), pâine integrală (50 g), ardei copt (40 g), muguri pin &amp; nuci (20 g), parmezan (10 g), rodie (5 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Selectie de Brânzeturi Fine (2 pers.) <span>300 g</span></h3>
+          <strong>120 lei</strong>
+        </div>
+        <p class="description">Selecție de brânzeturi maturate, ideală pentru sharing.</p>
+        <p class="ingredients">brie (60 g), gorgonzola (60 g), gauda (60 g), parmezan (40 g), nuci (20 g), fructe confiate (20 g), struguri (20 g), grisine &amp; biscuiți (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ceviche de Ton cu note citrice <span>200 g</span></h3>
+          <strong>78 lei</strong>
+        </div>
+        <p class="description">Ton proaspăt marinat, cu note citrice și exotice.</p>
+        <p class="ingredients">ton (100 g), avocado (40 g), ghimbir (10 g), ceapă (10 g), portocală (20 g), soia (10 g), pâine (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Tartar de Vită clasic <span>200 g</span></h3>
+          <strong>84 lei</strong>
+        </div>
+        <p class="description">Tartar clasic, fin condimentat, servit cu garnituri crocante.</p>
+        <p class="ingredients">mușchi vită (120 g), maioneză (20 g), Worcestershire (5 g), ou (30 g), castraveți murați (15 g), pâine (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Romanian Appetizer <span>250 g</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">Selecție tradițională reinterpretată.</p>
+        <p class="ingredients">salată vinete (100 g), zacuscă (80 g), cremă brânză (70 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Guacamole fresh cu lamiae &amp;Dijon <span>180 g</span></h3>
+          <strong>36 lei</strong>
+        </div>
+        <p class="description">Guacamole fresh, texturat și aromat.</p>
+        <p class="ingredients">avocado (100 g), roșii (30 g), ceapă (20 g), Dijon (10 g), lămâie (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Vită cu Hummus &amp; Rodie <span>230 g</span></h3>
+          <strong>54 lei</strong>
+        </div>
+        <p class="description">Vită fragedă servită pe hummus cremos, cu accente dulci-acrișoare de rodie.</p>
+        <p class="ingredients">vită (120 g), hummus (70 g), rodie (20 g), nuci (10 g), tahini (5 g), usturoi (5 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Morcovi Caramelizați cu Iaurt &amp; Mentă <span>250 g</span></h3>
+          <strong>36 lei</strong>
+        </div>
+        <p class="description">Morcovi copți și caramelizați, serviți cu iaurt răcoritor și note aromate.</p>
+        <p class="ingredients">morcovi (150 g), miere (20 g), iaurt (50 g), nuci (15 g), mentă (5 g), usturoi (5 g), boia afumată (5 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Brie Gratinat cu Fructe &amp; Trufe <span>180 g</span></h3>
+          <strong>64 lei</strong>
+        </div>
+        <p class="description">Brie cald, cremos, cu accente dulci și aromă subtilă de trufe.</p>
+        <p class="ingredients">brie (120 g), fructe de pădure (30 g), nuci (15 g), trufe (5 g), miere (10 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>PASTE ARTIZANALE &amp; RISOTTO</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Pappardelle cu Fructe de Mare &amp; Vin alb <span>350 g</span></h3>
+          <strong>82 lei</strong>
+        </div>
+        <p class="description">Mix de fructe de mare în sos fin cu unt și vin alb.</p>
+        <p class="ingredients">paste (120 g), creveți (80 g), calamar (50 g), caracatiță (50 g), unt (20 g), vin alb (20 g), parmezan (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Spaghetti Carbonara Clasic <span>350 g</span></h3>
+          <strong>56 lei</strong>
+        </div>
+        <p class="description">Rețetă clasică, cremoasă, cu pancetta și parmezan.</p>
+        <p class="ingredients">paste (130 g), pancetta (80 g), ou (60 g), parmezan (30 g), piper (5 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Spaghetti cu Burrata &amp; Busuioc <span>350 g</span></h3>
+          <strong>63 lei</strong>
+        </div>
+        <p class="description">Paste fine cu burrata cremoasă și roșii coapte.</p>
+        <p class="ingredients">paste (130 g), burrata (100 g), sos roșii (70 g), cherry (30 g), busuioc (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Risotto cu Hribi &amp; Trufe <span>250 g</span></h3>
+          <strong>74 lei</strong>
+        </div>
+        <p class="description">Risotto cremos cu aromă intensă de trufe.</p>
+        <p class="ingredients">orez arborio (100 g), hribi (60 g), parmezan (30 g), unt (20 g), vin alb (20 g), pastă trufe (10 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>AROME ASIATICE</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Noodles cu Pui &amp; Legume Wok <span>350 g</span></h3>
+          <strong>60 lei</strong>
+        </div>
+        <p class="description">Noodles wok cu pui și legume crocante.</p>
+        <p class="ingredients">noodles (120 g), pui (120 g), legume mix (80 g), ou (30 g), sos soia &amp; stridii (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bowl cu Avocado&amp; Somon <span>350 g</span></h3>
+          <strong>58 lei</strong>
+        </div>
+        <p class="description">Bowl fresh cu somon, avocado și note de ghimbir.</p>
+        <p class="ingredients">somon (120 g), avocado (80 g), edamame (40 g), legume (60 g), orez (30 g), soia &amp; lime (20 g) , ghimbir (5 gr)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Poke Bowl cu Vită &amp; Susan <span>350 g</span></h3>
+          <strong>60 lei</strong>
+        </div>
+        <p class="description">Bowl echilibrat cu vită și influențe asiatice.</p>
+        <p class="ingredients">vită (120 g), orez (120 g), ou (40 g), legume (50 g), soia &amp; susan (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Vită Hong Kong in Sos de Stridii <span>300 g</span></h3>
+          <strong>72 lei</strong>
+        </div>
+        <p class="description">Vită fragedă în sos asiatic intens, cu texturi crocante.</p>
+        <p class="ingredients">vită (150 g), orez (100 g), sos stridii (20 g), ou (30 g), ciuperci (30 g), nuci caramelizate (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Curry Thai cu Pui &amp; Lapte de Cocos <span>300 g</span></h3>
+          <strong>56 lei</strong>
+        </div>
+        <p class="description">Curry cremos, aromat, cu influențe asiatice.</p>
+        <p class="ingredients">pui (120 g), orez (100 g), lapte cocos (60 g), legume (40 g), pastă curry (20 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>JOSPER &amp; GRILL</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Smashed Burger cu Cheddar &amp; Cartofi prajiti <span>400 g</span></h3>
+          <strong>58 lei</strong>
+        </div>
+        <p class="description">Burger suculent cu carne presată și cartofi crocanți.</p>
+        <p class="ingredients">vită (150 g), gauda (40 g), bacon/ceapă (40 g), legume (50 g), chiflă (80 g), cartofi (120 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cheeseburger cu branza de capra &amp; Cartofi Prajiti <span>400 g</span></h3>
+          <strong>65 lei</strong>
+        </div>
+        <p class="description">Burger intens, cu brânză de capră și accente dulci.</p>
+        <p class="ingredients">vită (150 g), brânză capră (40 g), dulceață ardei (20 g), legume (50 g), cartofi prajiti(140 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Antricot de Vită Angus la Josper <span>450 g</span></h3>
+          <strong>140 lei</strong>
+        </div>
+        <p class="description">Antricot premium, gătit perfect, cu garnitură de legume.</p>
+        <p class="ingredients">antricot (250 g), legume (120 g), sparanghel (50 g), sos (30 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pulpă de Rață Confiată cu sos de portocala <span>400 g</span></h3>
+          <strong>81 lei</strong>
+        </div>
+        <p class="description">Rață fragedă cu piure cremos și sos aromat.</p>
+        <p class="ingredients">pulpă rață (220 g), piure (120 g), sos portocală (40 g), legume (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mușchi de Berbecuț cu ciuperci &amp; Sos de masline <span>280 g</span></h3>
+          <strong>86 lei</strong>
+        </div>
+        <p class="description">Berbecuț fraged cu sos intens de măsline.</p>
+        <p class="ingredients">berbecuț (160 g), ciuperci (60 g), sos măsline (40 g), unt (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mușchi de Vită în Sos de Vin Roșu &amp; Trufe <span>300 g</span></h3>
+          <strong>96 lei</strong>
+        </div>
+        <p class="description">Mușchi fin cu sos bogat de vin roșu.</p>
+        <p class="ingredients">mușchi vită (180 g), piure (100 g), sos vin (40 g), trufe (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Șnițel de Vită crocant cu chips de cartof dulce <span>400 g</span></h3>
+          <strong>75 lei</strong>
+        </div>
+        <p class="description">Șnițel crocant reinterpretat, cu accente moderne.</p>
+        <p class="ingredients">vită (200 g), crustă panko (80 g), bacon (40 g), chips cartof dulce (80 g), maioneză (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Kebab de Berbecuț cu bulgur &amp; Tabbouleh <span>350 g</span></h3>
+          <strong>65 lei</strong>
+        </div>
+        <p class="description">Kebab aromat servit cu bulgur și salată fresh.</p>
+        <p class="ingredients">carne berbecuț (160 g), bulgur (120 g), legume (70 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pastramă de Berbecut la Jar cu Cartofi Aurii &amp; Salată de Vară <span>590 gr</span></h3>
+          <strong>120 lei</strong>
+        </div>
+        <p class="description">Pastramă de berbecuț – 220g Cartofi aurii (cu usturoi &amp; rozmarin) – 180g</p>
+        <p class="ingredients">de vară (roșii, castraveți, ceapă) – 150gMuștar / sos de hrean – 40g ,Pastramă de Berbecuț la Jar cu Cartofi Aurii &amp; Salată de Vară. Muștar / sos de hrean – 40g</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>ALATURI</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Piure de Cartofi cremos <span>200 g</span></h3>
+          <strong>22 lei</strong>
+        </div>
+        <p class="description">Piure cremos, fin.</p>
+        <p class="ingredients">cartofi (150 g), unt (20 g), lapte &amp; smântână (30 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cartofi Prăjiți cu telemea <span>180 g</span></h3>
+          <strong>23 lei</strong>
+        </div>
+        <p class="description">Cartofi crocanți cu brânză sărată.</p>
+        <p class="ingredients">cartofi (140 g), telemea (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ciuperci Sote cu unt si usturoi <span>200 g</span></h3>
+          <strong>23 lei</strong>
+        </div>
+        <p class="description">Ciuperci sotate aromate.</p>
+        <p class="ingredients">ciuperci (160 g), unt (20 g), usturoi (10 g), pătrunjel (10 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Legume la Grill cu arome asiatice <span>250 g</span></h3>
+          <strong>24 lei</strong>
+        </div>
+        <p class="description">Legume coapte cu arome asiatice.</p>
+        <p class="ingredients">mix legume (200 g), sos (30 g), condimente (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Sparanghel cu Unt &amp; Parmezan <span>150 g</span></h3>
+          <strong>31 lei</strong>
+        </div>
+        <p class="description">Garnitură elegantă, fină.</p>
+        <p class="ingredients">sparanghel (120 g), unt (20 g), parmezan (10 g)</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>PESTE &amp; OCEAN</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Sea Bass cu legume coapte &amp; Sos de midii <span>300 g</span></h3>
+          <strong>82 lei</strong>
+        </div>
+        <p class="description">Pește fin cu legume coapte și sos delicat.</p>
+        <p class="ingredients">sea bass (180 g), legume (80 g), midii &amp; sos (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ton în Crustă de Fistic &amp; Orez aromat <span>300 g</span></h3>
+          <strong>88 lei</strong>
+        </div>
+        <p class="description">Ton suculent în crustă crocantă.</p>
+        <p class="ingredients">ton (180 g), crustă nuci (40 g), orez (60 g), sos (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Fructe de Mare in stil Mediteranean <span>600 g</span></h3>
+          <strong>220 lei</strong>
+        </div>
+        <p class="description">Preparat generos, ideal pentru sharing.</p>
+        <p class="ingredients">mix fructe mare (350 g), legume (150 g), sos (100 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Creveți Black Tiger in unt si usturoi <span>300 g</span></h3>
+          <strong>85 lei</strong>
+        </div>
+        <p class="description">Creveți suculenți la cuptor, aromatizați.</p>
+        <p class="ingredients">creveți (180 g), legume (80 g), unt &amp; usturoi (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Creveți Saganaki cu Feta si rosii <span>300 g</span></h3>
+          <strong>82 lei</strong>
+        </div>
+        <p class="description">Creveți în sos de roșii cu feta.</p>
+        <p class="ingredients">creveți (160 g), feta (60 g), roșii (60 g), pâine (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Calamari Fritti cu sos picant <span>330 g</span></h3>
+          <strong>61 lei</strong>
+        </div>
+        
+        <p class="ingredients">calamari (180 g), tempura (60 g), cartofi (70 g), sos (20 g) Descriere: Calamari crocanți, serviți cu sos picant.</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>DULCE</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Clătite Americane cu Mascarpone &amp; Fructe <span>200 g</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">Desert pufos cu mascarpone și fructe.</p>
+        <p class="ingredients">clătite (100 g), mascarpone (50 g), fructe (30 g), sirop (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Clătite Japoneze cu Caramel &amp; Fistic <span>200 g</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Clătite aerate cu topping dulce intens.</p>
+        <p class="ingredients">clătite (100 g), caramel (40 g), cremă fistic (30 g), fructe (30 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Papanași cu dulceata si smantana <span>200 g</span></h3>
+          <strong>41 lei</strong>
+        </div>
+        <p class="description">Desert tradițional reinterpretat.</p>
+        <p class="ingredients">papanași (120 g), smântână (40 g), dulceață (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>French Toast cu mascarpone &amp; Fructe de padure <span>180 g</span></h3>
+          <strong>38 lei</strong>
+        </div>
+        <p class="description">French toast dulce, bogat și aromat.</p>
+        <p class="ingredients">cozonac (100 g), mascarpone (40 g), fructe (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Grand Café Biscuit Cake 300 gr</h3>
+          <strong>42 lei</strong>
+        </div>
+        <p class="description">desert reinterpretat, cremos, cu textură fină și aspect modern</p>
+        <p class="ingredients">Biscuiți – 100g Cremă cacao &amp; unt – 120g Nuci / alune caramelizate – 30g Sos de ciocolată – 40g Decor (fulgi ciocolată / aur alimentar opțional) – 10g</p>
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>PENTRU CEI MICI</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Somon la Grătar cu legume <span>180 g</span></h3>
+          <strong>41 lei</strong>
+        </div>
+        <p class="description">Somon simplu, cu legume.</p>
+        <p class="ingredients">somon (120 g), legume (60 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Piept de Pui la grătar <span>160 g</span></h3>
+          <strong>33 lei</strong>
+        </div>
+        <p class="description">Preparat simplu și echilibrat.</p>
+        <p class="ingredients">pui (120 g), garnitură (40 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Risotto cremos cu legume <span>170 g</span></h3>
+          <strong>32 lei</strong>
+        </div>
+        <p class="description">Risotto cremos, adaptat copiilor.</p>
+        <p class="ingredients">orez (100 g), legume (50 g), parmezan (20 g)</p>
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Paste Tricolore cu sos rosu <span>200 g</span></h3>
+          <strong>31 lei</strong>
+        </div>
+        <p class="description">Paste simple cu sos de roșii.</p>
+        <p class="ingredients">paste (120 g), sos roșii (80 g)</p>
+      </article>
+    
+      </section>
+    
+        </div>
+      </section>
+    
+  
+      
+      <section class="divider">
+        <div class="photo-frame small"></div>
+        <p>Drinks</p>
+        <h1>Grand Cafe Bucharest</h1>
+      </section>
+        
+      <section class="group">
+        <h1>Drinks</h1>
+        <div class="columns">
+          
+      <section class="menu-section">
+        <h2>WHEN LIFE GIVES YOU LEMONS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Whiskey Sour</h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">The classic cocktail of balance, enjoyed by generations. Gramaj: 100 ml Pahar: rocks ● Jameson black barrel - 40 ml ● suc lămâie - 20 ml ● sirop zahăr - 20 ml ● albuş ou - 20 ml ● Angostura - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Amaretto Sour <span>110 ml</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">During the 1970s and 80s, the Amaretto Sour was a staple of disco culture, now is a lifestyle Pahar: rocks ● Amaretto Disaronno 40 ml ● suc lămâie - 30 ml ● sirop zahăr - 20 ml ● albuș ou - 20 ml ● Angostura - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Minority Sour <span>120 ml</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">A cocktail that doesn&#x27;t ask for attention... it owns it. Pahar: rocks ● Havana 3 40 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Midori</h3>
+          <strong>20 lei</strong>
+        </div>
+        <p class="description">● shrub mango + ghimbir - 30 ml ● suc lime- 20 ml ● sirop zahăr - 10 ml ● albuş ou - 20 ml</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>MAN OF CULTURE</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Old Fashioned <span>60 ml</span></h3>
+          <strong>46 lei</strong>
+        </div>
+        <p class="description">The classic cocktail of effortless sophistication. Pahar: rocks ● Jameson Black Barrel - 50 ml ● sirop zahăr - 10 ml ● Angostura - 2 dash ● orange bitters - 1 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Sazerac <span>75 ml</span></h3>
+          <strong>56 lei</strong>
+        </div>
+        <p class="description">A classic New Orleans cocktail Pahar: rocks ● Martell VS - 30 ml ● Four Roses - 30 ml ● sirop zahăr - 10 ml ● Peychaud&#x27;s Bitter- 3 dash ● Absinthe rinse - 5 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Manhattan <span>70 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Manhattan cocktail was created in the mid-1870s at the Manhattan Club in New York City Pahar: Cocktail glass ● Jameson Black Barrel - 50 ml ● Martini Rosso ● Angostura - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Margarita <span>90 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">As Herrera told it, the margarita began as an experiment when he tried to concoct something that would quench the thirst of a beautiful young showgirl named Marjorie King Pahar: Cocktail glass ● Olmec altos - 40 ml ● Marie Brizard Triple Sec - 20 ml ● suc lime- 20 ml ● sirop zahăr - 10 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mezcalita <span>80 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">The authentic Mexican spirit, deep and enigmatic. Pahar: rocks ● Del Maguey- 30 ml ● Marie Brizard Triple Sec10 ml ● suc lămâie - 30 ml ● sirop zahăr - 10 ml ● Angostura - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cosmopolitan <span>~110 ml</span></h3>
+          <strong>49 lei</strong>
+        </div>
+        <p class="description">Sex in the city season 8 Pahar: Cocktail glass ● Absolut - 40 ml ● Marie Brizard triple sec - 20 ml ● suc lime- 20 ml ● sirop zahăr - 10 ml ● suc merişor - 20 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Espresso Martini <span>~100 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">First wake me, then take me Pahar: Cocktail glass ● sirop cafea &amp; ciocolată - 30 ml ● Absolut - 40 ml ● Kahlua - 20 ml ● sirop zahăr - 10 ml</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>ORIGINS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Thyme Whisper <span>100 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Fresh thyme lingers softly, lifted by a crisp citrus note-clean, elegant, a little mysterious. It doesn&#x27;t shout... it draws you in. Pahar: coupeta Garnish: cimbrișor ars ● Ki no bi - 50 ml ● borş - 30 ml ● yuzu puree - 20 ml ● Cimbrisor</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Electrotherapy <span>130 ml</span></h3>
+          <strong>58 lei</strong>
+        </div>
+        <p class="description">the use of electrical energy for medical treatment, Pahar: cească de ceai Garnish: frunză de busuioc frunze busuioc - 8</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey <span>50 ml</span></h3>
+          <strong>47 lei</strong>
+        </div>
+        <p class="description">● Green Chartreuse - 20 ml ● suc lime - 30 ml ● sirop zahăr - 10 ml ● albuș ou - 20 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Fortune Cookie <span>80 ml</span></h3>
+          <strong>58 lei</strong>
+        </div>
+        <p class="description">Every cocktail comes with its own little prophecy. Pahar: rocks Garnish: fortune cookie ● Havana 7 – 40 ml ● Green Chartreuse - 20 ml ● Grand Marnier - 20 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Paradise Punch <span>130 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Sun-soaked tropical fruits in a vibrant, unforgettable sip. Pahar: rocks Garnish: frunze de bambus ● Havana 3 - 40 ml ● Midori - 20 ml ● shrub ananas - 30 ml ● suc lime- 20 ml ● albuș ou - 20 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Zesty Mang Ooh <span>150 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Bold, bright, and exquisitely smooth — a sip of tropical luxury. Pahar: rickey Garnish: piele de mango deshidratată ● Absolut - 40 ml ● Archers - 20 ml ● shrub mango + ghimbir - 20 ml ● suc lime - 30 ml ● ginger beer - top</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pornhub <span>80 ml</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">We all been there Pahar: cupă cocktail Garnish: spumă din puree de fructe + vin ● Absolut - 40 ml ● Passoa - 10 ml ● sirop vanilie - 10 ml ● puree fructul pasiunii - 10 ml ● Fresh lamaie 10 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Margarita Clara <span>105 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Unalome A contradiction between past present and future Pahar: cupă cocktail ● Avion silver- 40 ml ● soluție citrica - 25 ml ● Cointreau 15 ml ● cordial mentă - 10 ml ● Angostura - 2 dash</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>SHAKEN OR STIRRED</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>The Martini <span>~70 ml</span></h3>
+          <strong>49 lei</strong>
+        </div>
+        <p class="description">Over time, Martini has become the definition of elegance in a glass, adopted and reinterpreted by generations. Pahar: cupeta ● Monkey 47 sau Absolut- 50 ml ● Martini Dry- 20 ml ● orange bitters - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mi-To <span>~60 ml</span></h3>
+          <strong>49 lei</strong>
+        </div>
+        <p class="description">A precursor to the famous Negroni, born from the Italian aperitivo tradition. Pahar: rocks ● Campari - 30 ml ● Martini Rosso- 30 ml ● Angostura - 2 dash</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>FRESH &amp; EFFERVESCENT</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>French 75 <span>~140 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Created during the First World War, named after the French 75 mm gun - just as powerful, but much more refined.&quot; Pahar: fluta ● Monkey- 40 ml ● suc lămâie - 20 ml ● sirop zahăr - 20 ml ● Serena Prosecco- top</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Moscow Mule <span>~160 ml</span></h3>
+          <strong>49 lei</strong>
+        </div>
+        <p class="description">Born in 1940s America, it became iconic thanks to the copper mug and its fresh character. Pahar: cană copper mug / highball ● Absolut - 40 ml ● suc lămâie - 20 ml ● ginger beer - 100 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Dark &#x27;N&#x27; Stormy <span>~150 ml</span></h3>
+          <strong>51 lei</strong>
+        </div>
+        <p class="description">Originally from Bermuda, it evokes tropical storms and rough seas. Pahar: highball ● Havana 7 - 50 ml ● ginger beer - 100 ml ● Angostura - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Southside Rickey <span>~150 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Inspired by American culture of the early 20th century, an urban summer cocktail. Pahar: highball</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey <span>50 ml</span></h3>
+          <strong>47 lei</strong>
+        </div>
+        <p class="description">● suc lămâie - 25 ml ● sirop zahăr - 15 ml ● mentă - 8 frunze ● apă minerală - top</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>CONTEMPORARY CLASSICS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Daiquiri <span>~85 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">A study in perfect balance Pahar: coupeta ● Havana 7 - 50 ml ● suc lime - 25 ml ● sirop zahăr - 10 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Paloma</h3>
+          <strong>55 lei</strong>
+        </div>
+        <p class="description">&quot;She has a heart as gentle and beautiful as a white dove.&quot;</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Gramaj:</h3>
+          <strong>180 lei</strong>
+        </div>
+        <p class="description">Pahar collins ● 40 Olmeca Altos ● 10 ml fresh ● 130 top 3 cents pink soda</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bee&#x27;s Knees <span>~90 ml</span></h3>
+          <strong>49 lei</strong>
+        </div>
+        <p class="description">A symbol of the Prohibition era, when honey was used to refine the taste of alcohol. Pahar: cupă cocktail</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey <span>50 ml</span></h3>
+          <strong>47 lei</strong>
+        </div>
+        <p class="description">● suc lămâie - 25 ml ● sirop miere - 15 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Last Word <span>~100 ml</span></h3>
+          <strong>58 lei</strong>
+        </div>
+        <p class="description">Rediscovered in the modern era, this Prohibition-era cocktail has become a favorite among connoisseurs. Pahar: cupă cocktail</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey <span>30 ml</span></h3>
+          <strong>47 lei</strong>
+        </div>
+        <p class="description">● Green Chartreuse - 20 ml ● Luxardo Maraschino - 20 ml ● suc lime - 30 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bijou <span>~70 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">The name means &quot;jewel,&quot; with each ingredient representing a precious stone in the composition. Pahar: cupă cocktail</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey <span>40 ml</span></h3>
+          <strong>47 lei</strong>
+        </div>
+        <p class="description">● Martini rosso - 20 ml ● Green Chartreuse - 10 ml ● orange bitters - 2 dash</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>APERITIVO CULTURE</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Negroni <span>~90 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Born in Florence, it remains one of the most respected cocktails in the world. Pahar: rocks ● Campari - 30 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey <span>30 ml</span></h3>
+          <strong>47 lei</strong>
+        </div>
+        <p class="description">● Martini Rosso - 30 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Boulevardier <span>~90 ml</span></h3>
+          <strong>52 lei</strong>
+        </div>
+        <p class="description">Created for Americans in Paris in the 1920s, a symbol of expatriate elegance. Pahar: rocks ● Four roses - 30 ml ● Martini Rosso - 30 ml ● Campari - 30 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Americano <span>~120 ml</span></h3>
+          <strong>50 lei</strong>
+        </div>
+        <p class="description">A precursor to the Negroni, popular among Americans in Europe. Pahar: rocks ● Campari - 30 ml ● Martini Rosso - 30 ml ● apă minerală - top</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Sbagliato <span>~120 ml</span></h3>
+          <strong>50 lei</strong>
+        </div>
+        <p class="description">The &quot;happy mistake&quot; that replaced gin with Prosecco, becoming a modern classic. Pahar: rocks / wine glass ● Campari - 30 ml ● Martini Rosso - 30 ml ● Prosecco - 30 ml</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>SPRITZERS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Hugo <span>~160 ml</span></h3>
+          <strong>53 lei</strong>
+        </div>
+        <p class="description">Born in the Italian Alps, it evokes the freshness of mountain air and refined simplicity. Pahar: pahar vin ● sirop soc - 20 ml ● Prosecco - 100 ml ● lime ● mentă ● apă minerală - 30 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Aperol Spritz <span>~180 ml</span></h3>
+          <strong>53 lei</strong>
+        </div>
+        <p class="description">A symbol of the Italian lifestyle, dedicated to moments of relaxation. Pahar: pahar vin ● Aperol - 60 ml ● Prosecco - 90 ml ● apă minerală - 30 ml</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Amèrie Spritz <span>~180 ml</span></h3>
+          <strong>53 lei</strong>
+        </div>
+        <p class="description">A modern interpretation of the classic spritz, with a distinct romantic touch. Pahar: pahar vin ● Amèrie - 50 ml ● Prosecco 100 ml ● apă minerală - 30 ml ● parfum trandafir</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mimosa</h3>
+          <strong>54 lei</strong>
+        </div>
+        <p class="description">When life gives you oranges, add prosecco</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Gramaj</h3>
+          <strong>180 lei</strong>
+        </div>
+        <p class="description">Pahar coupeta</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Prosecco</h3>
+          <strong>150 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Suc portocale</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>NON-ALCOHOLICS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Everything Under the Sky <span>120 ml</span></h3>
+          <strong>32 lei</strong>
+        </div>
+        <p class="description">A promise to yourself Pahar: highball ● shrub mango + ghimbir - 40 ml ● suc lime - 40 ml ● apă minerală - top ● Angostura - 2 dash</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pineapple Apple Pen <span>120 ml</span></h3>
+          <strong>32 lei</strong>
+        </div>
+        <p class="description">I have a pen, i have an apple Pahar: highball ● shrub ananas - 40 ml ● suc lime - 40 ml ● suc mere - top ● Angostura - 2 dash</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>CAFEA</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Espresso <span>30 ml</span></h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Espresso doppio <span>30 ml</span></h3>
+          <strong>21 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ristretto <span>20ml</span></h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Americano <span>180ml</span></h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Long black <span>160ml</span></h3>
+          <strong>21 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Espresso macchiato <span>45 ml</span></h3>
+          <strong>19 lei</strong>
+        </div>
+        <p class="description">● 30 cafea ● 15 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cortado <span>100 ml</span></h3>
+          <strong>19 lei</strong>
+        </div>
+        <p class="description">● 50 cafea ● 50 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cappuccino <span>180 ml</span></h3>
+          <strong>19 lei</strong>
+        </div>
+        <p class="description">● 30 cafea ● 150 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Flat white <span>180 ml</span></h3>
+          <strong>21 lei</strong>
+        </div>
+        <p class="description">● 60 cafea ● 120 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Caffe latte <span>270 ml</span></h3>
+          <strong>23 lei</strong>
+        </div>
+        <p class="description">● 30 ml cafea ● 240 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Latte macchiato <span>300 ml</span></h3>
+          <strong>23 lei</strong>
+        </div>
+        <p class="description">● 30 cafea ● 270 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Matcha latte <span>250 ml</span></h3>
+          <strong>30 lei</strong>
+        </div>
+        <p class="description">● 2 gr pudra matcha ● 30 ml apa ● 220 ml lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pink latte <span>250 ml</span></h3>
+          <strong>30 lei</strong>
+        </div>
+        <p class="description">● 2gr pudra sfecla ● 30 ml apa ● 220 lapte</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Affogato <span>110 ml</span></h3>
+          <strong>30 lei</strong>
+        </div>
+        <p class="description">● 60 ml îngheţată ● 50 ml cafea</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Iced latte <span>270 ml</span></h3>
+          <strong>22 lei</strong>
+        </div>
+        <p class="description">● 30 ml cafea ● 190 ml lapte ● 50 gr gheață</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Espresso tonic <span>220 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        <p class="description">● 30 ml cafea ● 150 ml apa tonica ● 40 gr gheață</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cold brew <span>250 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        <p class="description">● 200ml cafea ● 50 gheață</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cold brew oreo latte <span>280 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        <p class="description">● 80 Coldbrew ● 150 lapte ● 50 gr gheață ● 14 gr biscuiți oreo</p>
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>LEMONADES &amp; FRESH</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Ginger &amp; honey <span>350 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mint <span>350 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Classic <span>350 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Strawberries <span>350 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Cucumber <span>350 ml</span></h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Fresh orange</h3>
+          <strong>31 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Fresh grapefruit</h3>
+          <strong>31 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Fresh mix</h3>
+          <strong>31 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>WHISKEY</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Chivas 12</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Chivas 15</h3>
+          <strong>35 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Chivas 18</h3>
+          <strong>50 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Chivas 21</h3>
+          <strong>90 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Glenlivet 12</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Glenlivet 15</h3>
+          <strong>38 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Glenlivet 18</h3>
+          <strong>46 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Aberlour 14</h3>
+          <strong>38 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Aberlour 16</h3>
+          <strong>48 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Fuji</h3>
+          <strong>55 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Jameson</h3>
+          <strong>26 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Jameson Black Barrel</h3>
+          <strong>36 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Four Roses</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Deacon</h3>
+          <strong>38 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>VODKA</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Absolut</h3>
+          <strong>26 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Absolut Elyx</h3>
+          <strong>37 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ostoya</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Beluga</h3>
+          <strong>50 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Belvedere</h3>
+          <strong>48 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>RUM</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Havana 3</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Havana 7</h3>
+          <strong>32 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Havana Maestro</h3>
+          <strong>38 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Don Navarro</h3>
+          <strong>45 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bumbu</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bumbu XO</h3>
+          <strong>38 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bumbu Cream</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>La Hechicera</h3>
+          <strong>55 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>TEQUILA / MEZCAL</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Olmeca Altos</h3>
+          <strong>28 lei</strong>
+        </div>
+        <p class="description">● Olmeca Reposado 28 ei</p>
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Del Maguey</h3>
+          <strong>55 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Avion Silver</h3>
+          <strong>35 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Avion Reposado</h3>
+          <strong>35 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Avion 44</h3>
+          <strong>120 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>COGNAC</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Martell VS</h3>
+          <strong>32 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Martell VSOP</h3>
+          <strong>45 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Martell XO</h3>
+          <strong>75 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Martell Blue Swift</h3>
+          <strong>75 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>DIGESTIVE</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Amaro del Capo</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ramazzotti Limoncello</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ramazzotti Sambuca</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ramazotti Amaro</h3>
+          <strong>26 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Antica Formula</h3>
+          <strong>35 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Branca Menta</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Martini</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Grappa</h3>
+          <strong>40 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>LIQUEUR</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Carolans</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Marie Brizard</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Kahlua</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Absint</h3>
+          <strong>40 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Aperol</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Amerie</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Midori</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Green Chartreuse</h3>
+          <strong>45 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Sake</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>GIN</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Ceders (non-alc)</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Malfy Originale / Rosa /Arancia/Limone</h3>
+          <strong>39 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Whitley Neill Rhubarb/ Quince</h3>
+          <strong>39 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey 47</h3>
+          <strong>39 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>McQueen Violet Fog</h3>
+          <strong>40 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ki No Bi</h3>
+          <strong>45 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>BEER</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Carlsberg</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Carlsberg n/a</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bucur Blond</h3>
+          <strong>25 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bucur Draught</h3>
+          <strong>25 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bucur Black</h3>
+          <strong>25 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Guinness 0.33</h3>
+          <strong>35 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Grimbergen</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Kronenburg blanc</h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Kronenburg Blanc Draught</h3>
+          <strong>29 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Winstefaner</h3>
+          <strong>30 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Somersby mere/pere/afine/mure</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>SOFT DRINKS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Pepsi</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Pepsi Max</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Mirinda</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>7up</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Evervess</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Evervess Bitter Lemon</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Lipton lemon/peach</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Granini</h3>
+          <strong>18 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>3 cents pink lemonade</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Red bull</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Aqua Carpatica plata/minerala 0.33</h3>
+          <strong>16 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Aqua Carpatica Plata /Minerala 0.75</h3>
+          <strong>28 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ceders (non-alc)</h3>
+          <strong>24 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+
+      <section class="menu-section">
+        <h2>LONG DRINKS</h2>
+        
+      <article class="item">
+        <div class="item-row">
+          <h3>Absolut&amp;Juice</h3>
+          <strong>44 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Absolut Redbull</h3>
+          <strong>48 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Absolut Elyx &amp; Juice</h3>
+          <strong>55 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Absolut Elyx &amp; Red Bull</h3>
+          <strong>58 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ostoya&amp;Juice</h3>
+          <strong>48 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ostoya RedBull</h3>
+          <strong>55 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Beluga&amp;Juice</h3>
+          <strong>64 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Beluga RedBull</h3>
+          <strong>68 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Belvedere&amp;Juice</h3>
+          <strong>64 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Belvedere RedBull</h3>
+          <strong>68 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ceders&amp;Tonic</h3>
+          <strong>44 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Malfy Originale/Rosa/Arancia/Limone&amp;Tonic</h3>
+          <strong>57 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Whitley Neill Rhubarb/Quince&amp;Tonic</h3>
+          <strong>57 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Monkey 47 Tonic</h3>
+          <strong>57 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>McQueen Violet Fog Tonic</h3>
+          <strong>58 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Ki No Bi Tonic</h3>
+          <strong>63 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Havana 3 &amp; Pepsi</h3>
+          <strong>44 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Havana 7&amp; Pepsi</h3>
+          <strong>50 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Havana Maestro&amp; Pepsi</h3>
+          <strong>56 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bumbu&amp; Pepsi</h3>
+          <strong>48 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+
+      <article class="item">
+        <div class="item-row">
+          <h3>Bumbu XO&amp; Pepsi</h3>
+          <strong>56 lei</strong>
+        </div>
+        
+        
+      </article>
+    
+      </section>
+    
+        </div>
+      </section>
+    
+</body>
+</html>
