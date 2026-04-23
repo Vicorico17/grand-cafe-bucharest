@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.grandcafe.ro"
+        }
+      ],
+      "destination": "https://grandcafe.ro/$1",
+      "permanent": true
+    }
+  ]
+}
