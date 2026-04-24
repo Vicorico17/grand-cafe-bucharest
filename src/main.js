@@ -1,5 +1,8 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
+const historyDialog = document.querySelector("[data-history-dialog]");
+const historyOpenButton = document.querySelector("[data-history-open]");
+const historyCloseButtons = Array.from(document.querySelectorAll("[data-history-close]"));
 
 navToggle?.addEventListener("click", () => {
   const isOpen = siteNav.classList.toggle("is-open");
@@ -12,6 +15,38 @@ siteNav?.addEventListener("click", (event) => {
     siteNav.classList.remove("is-open");
     navToggle?.setAttribute("aria-expanded", "false");
     navToggle?.setAttribute("aria-label", "Open menu");
+  }
+});
+
+const setHistoryDialog = (isOpen) => {
+  if (!historyDialog) return;
+
+  historyDialog.hidden = !isOpen;
+  document.body.classList.toggle("history-open", isOpen);
+
+  if (isOpen) {
+    historyOpenButton?.setAttribute("aria-expanded", "true");
+    historyCloseButtons[0]?.focus();
+    return;
+  }
+
+  historyOpenButton?.setAttribute("aria-expanded", "false");
+  historyOpenButton?.focus();
+};
+
+historyOpenButton?.addEventListener("click", () => {
+  setHistoryDialog(true);
+});
+
+historyCloseButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setHistoryDialog(false);
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && historyDialog instanceof HTMLElement && !historyDialog.hidden) {
+    setHistoryDialog(false);
   }
 });
 
