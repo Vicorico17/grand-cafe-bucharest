@@ -493,6 +493,7 @@ h3 {
   width: min(1120px, 100%);
   max-height: min(92vh, 1000px);
   overflow: auto;
+  overflow-x: hidden;
   padding: clamp(22px, 3vw, 34px);
   border: 1px solid rgba(255, 253, 248, 0.18);
   border-radius: 28px;
@@ -500,6 +501,7 @@ h3 {
     linear-gradient(180deg, rgba(247, 244, 238, 0.95), rgba(247, 244, 238, 0.88)),
     rgba(255, 253, 248, 0.82);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.22);
+  overscroll-behavior: contain;
 }
 
 .history-portal-header {
@@ -1231,9 +1233,12 @@ h3 {
   }
 
   .history-portal-panel {
+    width: 100%;
     max-height: 100vh;
     padding: 18px;
     border-radius: 18px;
+    overflow-x: hidden;
+    touch-action: pan-y;
   }
 
   .reservation-portal {
@@ -1262,6 +1267,7 @@ h3 {
   .timeline-shell {
     padding: 0;
     background: transparent;
+    overflow-x: clip;
   }
 
   .timeline-shell::after {
@@ -1332,7 +1338,7 @@ h3 {
   }
 
   .timeline-copy {
-    width: 100%;
+    width: calc(100% - 58px);
     margin-top: 14px;
     margin-left: 58px;
     padding: 18px;
