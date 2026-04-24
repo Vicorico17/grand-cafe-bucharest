@@ -1,8 +1,9 @@
 const navToggle = document.querySelector(".nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const historyDialog = document.querySelector("[data-history-dialog]");
-const historyOpenButton = document.querySelector("[data-history-open]");
+const historyOpenButtons = Array.from(document.querySelectorAll("[data-history-open]"));
 const historyCloseButtons = Array.from(document.querySelectorAll("[data-history-close]"));
+let lastHistoryTrigger = null;
 
 navToggle?.addEventListener("click", () => {
   const isOpen = siteNav.classList.toggle("is-open");
@@ -23,19 +24,23 @@ const setHistoryDialog = (isOpen) => {
 
   historyDialog.hidden = !isOpen;
   document.body.classList.toggle("history-open", isOpen);
+  historyOpenButtons.forEach((button) => {
+    button.setAttribute("aria-expanded", String(isOpen));
+  });
 
   if (isOpen) {
-    historyOpenButton?.setAttribute("aria-expanded", "true");
     historyCloseButtons[0]?.focus();
     return;
   }
 
-  historyOpenButton?.setAttribute("aria-expanded", "false");
-  historyOpenButton?.focus();
+  lastHistoryTrigger?.focus();
 };
 
-historyOpenButton?.addEventListener("click", () => {
-  setHistoryDialog(true);
+historyOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    lastHistoryTrigger = button;
+    setHistoryDialog(true);
+  });
 });
 
 historyCloseButtons.forEach((button) => {
