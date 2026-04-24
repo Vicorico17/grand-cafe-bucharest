@@ -30,6 +30,10 @@ body.history-open {
   overflow: hidden;
 }
 
+body.reserve-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -478,6 +482,216 @@ h3 {
   font-size: 1rem;
 }
 
+.reservation-portal {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 3vw, 28px);
+}
+
+.reservation-portal[hidden] {
+  display: none;
+}
+
+.reservation-portal-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(125, 18, 50, 0.18), transparent 28%),
+    radial-gradient(circle at top left, rgba(177, 138, 74, 0.15), transparent 22%),
+    rgba(12, 10, 9, 0.74);
+  backdrop-filter: blur(14px);
+}
+
+.reservation-portal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  max-height: min(92vh, 1000px);
+  overflow: auto;
+  border: 1px solid rgba(255, 253, 248, 0.18);
+  border-radius: 28px;
+  background: #efe8dc;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+
+.reservation-portal-grid {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(360px, 1.1fr);
+}
+
+.reservation-scene {
+  min-height: 100%;
+  padding: clamp(28px, 4vw, 42px);
+  color: var(--white);
+  background:
+    linear-gradient(180deg, rgba(20, 17, 15, 0.28), rgba(20, 17, 15, 0.88)),
+    url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Interior%20Casa%20Monteoru.jpg?width=1400") center / cover;
+}
+
+.reservation-scene h3 {
+  max-width: 10ch;
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.reservation-scene p:not(.eyebrow) {
+  max-width: 32rem;
+  margin: 0;
+  color: rgba(255, 253, 248, 0.84);
+  font-size: 1.02rem;
+}
+
+.reservation-highlights {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.reservation-highlights div {
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 253, 248, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 253, 248, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.reservation-highlights strong,
+.reservation-highlights span {
+  display: block;
+}
+
+.reservation-highlights strong {
+  margin-bottom: 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  font-weight: 500;
+}
+
+.reservation-highlights span {
+  color: rgba(255, 253, 248, 0.74);
+  font-size: 0.94rem;
+}
+
+.reservation-form-shell {
+  position: relative;
+  padding: clamp(28px, 4vw, 42px);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.86), rgba(255, 253, 248, 0.94)),
+    rgba(247, 244, 238, 0.96);
+}
+
+.reservation-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  min-height: 42px;
+  padding: 10px 16px;
+  border: 1px solid rgba(23, 20, 18, 0.1);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(255, 253, 248, 0.82);
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.reservation-form,
+.reservation-confirmation {
+  display: grid;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.reservation-form label,
+.reservation-form fieldset {
+  display: grid;
+  gap: 8px;
+}
+
+.reservation-form span,
+.reservation-form legend {
+  color: var(--charcoal);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  border: 1px solid rgba(23, 20, 18, 0.12);
+  border-radius: 16px;
+  color: var(--ink);
+  background: rgba(255, 253, 248, 0.9);
+  font: inherit;
+}
+
+.reservation-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.reservation-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.reservation-service {
+  padding: 0;
+  border: 0;
+}
+
+.reservation-service label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 16px;
+  border: 1px solid rgba(23, 20, 18, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 253, 248, 0.9);
+}
+
+.reservation-service input {
+  width: 18px;
+  min-height: 18px;
+  margin: 0;
+}
+
+.reservation-service span {
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.98rem;
+}
+
+.reservation-submit {
+  justify-self: start;
+  margin-top: 6px;
+}
+
+.reservation-confirmation {
+  align-content: start;
+}
+
+.reservation-confirmation h3 {
+  margin: 0;
+}
+
+.reservation-confirmation p:not(.eyebrow) {
+  max-width: 32rem;
+  margin: 0;
+  color: var(--muted);
+}
+
 .section-copy p:not(.eyebrow) {
   max-width: 680px;
   color: var(--muted);
@@ -871,6 +1085,10 @@ h3 {
     flex-direction: column;
   }
 
+  .reservation-portal-grid {
+    grid-template-columns: 1fr;
+  }
+
   .timeline-shell {
     padding-right: 12px;
     padding-left: 12px;
@@ -921,7 +1139,9 @@ h3 {
   }
 
   .history-launch,
-  .history-close {
+  .history-close,
+  .reservation-close,
+  .reservation-submit {
     width: 100%;
     justify-content: center;
   }
@@ -934,6 +1154,29 @@ h3 {
     max-height: 100vh;
     padding: 18px;
     border-radius: 18px;
+  }
+
+  .reservation-portal {
+    padding: 8px;
+  }
+
+  .reservation-portal-panel {
+    max-height: 100vh;
+    border-radius: 18px;
+  }
+
+  .reservation-form-shell,
+  .reservation-scene {
+    padding: 22px 18px;
+  }
+
+  .reservation-close {
+    position: static;
+    margin-bottom: 8px;
+  }
+
+  .reservation-form-row {
+    grid-template-columns: 1fr;
   }
 
   .timeline-shell {

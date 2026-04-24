@@ -56,9 +56,9 @@
             most beautiful addresses.
           </p>
           <div class="hero-actions">
-            <a class="button liquid-button" href="mailto:reservations@grandcafe.ro">
+            <button class="button liquid-button" type="button" data-reserve-open aria-haspopup="dialog">
               <span>Reserve</span>
-            </a>
+            </button>
             <a class="button liquid-button" href="/menu/">
               <span>Menu</span>
             </a>
@@ -426,11 +426,117 @@
           <p>
             Join the first tables at Grand Cafe Bucharest for the opening season.
           </p>
-          <a class="button primary reserve-spot" href="mailto:reservations@grandcafe.ro">
-            Reserve your spot
-          </a>
+          <button class="button liquid-button reserve-spot" type="button" data-reserve-open aria-haspopup="dialog">
+            <span>Reserve your spot</span>
+          </button>
         </div>
       </section>
+
+      <div class="reservation-portal" hidden data-reserve-dialog>
+        <div class="reservation-portal-backdrop" data-reserve-close></div>
+        <div
+          class="reservation-portal-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="reservation-experience-title"
+        >
+          <div class="reservation-portal-grid">
+            <div class="reservation-scene">
+              <p class="eyebrow">Reservation Experience</p>
+              <h3 id="reservation-experience-title">Choose your table, service, and hour.</h3>
+              <p>
+                A mock booking flow for Grand Cafe Bucharest, shaped like a concierge moment rather than a generic form.
+              </p>
+              <div class="reservation-highlights">
+                <div>
+                  <strong>Morning Room</strong>
+                  <span>Pastry, coffee, early light.</span>
+                </div>
+                <div>
+                  <strong>Dining Salon</strong>
+                  <span>Lunch and dinner under the historic ceilings.</span>
+                </div>
+                <div>
+                  <strong>Late Aperitif</strong>
+                  <span>Cocktails, dessert, and a slower table.</span>
+                </div>
+              </div>
+            </div>
+            <div class="reservation-form-shell">
+              <button class="reservation-close" type="button" data-reserve-close aria-label="Close reservation experience">
+                Close
+              </button>
+              <form class="reservation-form" data-reserve-form>
+                <label>
+                  <span>Guest name</span>
+                  <input type="text" name="guest_name" placeholder="Ana Ionescu" required>
+                </label>
+                <label>
+                  <span>Date</span>
+                  <input type="date" name="date" required>
+                </label>
+                <div class="reservation-form-row">
+                  <label>
+                    <span>Time</span>
+                    <select name="time" required>
+                      <option value="">Select</option>
+                      <option>09:00</option>
+                      <option>11:30</option>
+                      <option>13:00</option>
+                      <option>19:00</option>
+                      <option>21:30</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Guests</span>
+                    <select name="guests" required>
+                      <option value="">Select</option>
+                      <option>2 guests</option>
+                      <option>4 guests</option>
+                      <option>6 guests</option>
+                      <option>8 guests</option>
+                    </select>
+                  </label>
+                </div>
+                <fieldset class="reservation-service">
+                  <legend>Service</legend>
+                  <label>
+                    <input type="radio" name="service" value="Breakfast room" checked>
+                    <span>Breakfast room</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="service" value="Lunch salon">
+                    <span>Lunch salon</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="service" value="Dinner salon">
+                    <span>Dinner salon</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="service" value="Late aperitif">
+                    <span>Late aperitif</span>
+                  </label>
+                </fieldset>
+                <label>
+                  <span>Notes</span>
+                  <textarea name="notes" rows="3" placeholder="Window table, anniversary, quiet corner..."></textarea>
+                </label>
+                <button class="button liquid-button reservation-submit" type="submit">
+                  <span>Confirm mock reservation</span>
+                </button>
+              </form>
+              <div class="reservation-confirmation" hidden data-reserve-success>
+                <p class="eyebrow">Reserved</p>
+                <h3>Your table is held.</h3>
+                <p data-reserve-summary></p>
+                <button class="button liquid-button" type="button" data-reserve-reset>
+                  <span>Book another table</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="contact section-band" id="contact">
         <div class="section-heading">
