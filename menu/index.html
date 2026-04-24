@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
+      id="meta-description"
       name="description"
       content="Full food and drinks menu for Grand Cafe Bucharest."
     >
     <title>Menu | Grand Cafe Bucharest</title>
     <link rel="canonical" href="https://grandcafe.ro/menu/">
     <meta property="og:url" content="https://grandcafe.ro/menu/">
-    <meta property="og:title" content="Menu | Grand Cafe Bucharest">
-    <meta property="og:description" content="Full food and drinks menu for Grand Cafe Bucharest.">
+    <meta id="meta-og-title" property="og:title" content="Menu | Grand Cafe Bucharest">
+    <meta id="meta-og-description" property="og:description" content="Full food and drinks menu for Grand Cafe Bucharest.">
     <style>
       :root {
         --ink: #171412;
@@ -84,6 +85,38 @@
         flex-wrap: wrap;
         gap: 10px;
         justify-content: flex-end;
+      }
+
+      .language-switcher {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px;
+        border: 1px solid rgba(255, 253, 248, .18);
+        border-radius: 999px;
+        background: rgba(255, 253, 248, .08);
+      }
+
+      .lang-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        min-height: 34px;
+        padding: 8px 12px;
+        border: 0;
+        border-radius: 999px;
+        color: rgba(255, 253, 248, .78);
+        background: transparent;
+        font: inherit;
+        font-size: .74rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .lang-button.is-active {
+        color: var(--white);
+        background: rgba(255, 253, 248, .16);
       }
 
       .button {
@@ -302,16 +335,26 @@
   </head>
   <body>
     <header class="menu-header">
-      <a class="brand" href="/" aria-label="Grand Cafe Bucharest home">
+      <a class="brand" id="brand-link" href="/" aria-label="Grand Cafe Bucharest home">
         <span>Grand Cafe</span>
         <strong>Bucharest</strong>
       </a>
       <div class="header-actions">
-        <a class="button" href="/">Back to site</a>
-        <a class="button primary" href="/menu/grand-cafe-bucharest-menu.pdf" target="_blank" rel="noopener">
+        <div class="language-switcher" aria-label="Language switcher">
+          <button class="lang-button is-active" type="button" data-lang-switch="en" aria-pressed="true">
+            <span aria-hidden="true">🇬🇧</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-button" type="button" data-lang-switch="ro" aria-pressed="false">
+            <span aria-hidden="true">🇷🇴</span>
+            <span>RO</span>
+          </button>
+        </div>
+        <a class="button" id="back-to-site" href="/">Back to site</a>
+        <a class="button primary" id="pdf-smooth" href="/menu/grand-cafe-bucharest-menu.pdf" target="_blank" rel="noopener">
           Smooth PDF
         </a>
-        <a class="button" href="/menu/grand-cafe-bucharest-menu-styled.pdf" target="_blank" rel="noopener">
+        <a class="button" id="pdf-styled" href="/menu/grand-cafe-bucharest-menu-styled.pdf" target="_blank" rel="noopener">
           Styled PDF
         </a>
       </div>
@@ -319,9 +362,9 @@
 
     <main>
       <section class="page-title">
-        <p class="eyebrow">Full Menu</p>
+        <p class="eyebrow" id="page-eyebrow">Full Menu</p>
         <h1>Grand Cafe Bucharest</h1>
-        <p>All day dining, cocktails, coffee, wine, spirits, and soft drinks.</p>
+        <p id="page-copy">All day dining, cocktails, coffee, wine, spirits, and soft drinks.</p>
       </section>
 
       <nav class="jump-nav" id="jump-nav" aria-label="Menu sections"></nav>
@@ -329,9 +372,46 @@
     </main>
 
     <script>
+      const LANGUAGE_KEY = "gcb-language";
       const root = document.querySelector("#menu-root");
       const jumpNav = document.querySelector("#jump-nav");
-      const formatter = new Intl.Collator("en");
+      const languageButtons = Array.from(document.querySelectorAll("[data-lang-switch]"));
+      let currentLanguage = localStorage.getItem(LANGUAGE_KEY) || "en";
+
+      const copy = {
+        en: {
+          htmlLang: "en",
+          title: "Menu | Grand Cafe Bucharest",
+          metaDescription: "Full food and drinks menu for Grand Cafe Bucharest.",
+          brandAriaLabel: "Grand Cafe Bucharest home",
+          jumpNavAriaLabel: "Menu sections",
+          pageEyebrow: "Full Menu",
+          pageCopy: "All day dining, cocktails, coffee, wine, spirits, and soft drinks.",
+          backToSite: "Back to site",
+          pdfSmooth: "Smooth PDF",
+          pdfStyled: "Styled PDF",
+          food: "Food",
+          drinks: "Drinks",
+          menuLoadError: "The menu could not be loaded. Please use the PDF link above.",
+          collator: "en",
+        },
+        ro: {
+          htmlLang: "ro",
+          title: "Meniu | Grand Cafe Bucharest",
+          metaDescription: "Meniul complet de mâncare și băuturi pentru Grand Cafe Bucharest.",
+          brandAriaLabel: "Grand Cafe Bucharest acasă",
+          jumpNavAriaLabel: "Secțiuni de meniu",
+          pageEyebrow: "Meniu Complet",
+          pageCopy: "Dining pe tot parcursul zilei, cocktailuri, cafea, vin, spirtoase și băuturi răcoritoare.",
+          backToSite: "Înapoi pe site",
+          pdfSmooth: "PDF simplu",
+          pdfStyled: "PDF stilizat",
+          food: "Mâncare",
+          drinks: "Băuturi",
+          menuLoadError: "Meniul nu a putut fi încărcat. Folosește linkul PDF de mai sus.",
+          collator: "ro",
+        },
+      };
 
       const slugify = (value) =>
         value
@@ -340,6 +420,32 @@
           .replace(/[\u0300-\u036f]/g, "")
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/^-|-$/g, "");
+
+      const applyLanguage = (language) => {
+        currentLanguage = language === "ro" ? "ro" : "en";
+        const languageCopy = copy[currentLanguage];
+
+        document.documentElement.lang = languageCopy.htmlLang;
+        document.title = languageCopy.title;
+        document.querySelector("#meta-description").content = languageCopy.metaDescription;
+        document.querySelector("#meta-og-title").content = languageCopy.title;
+        document.querySelector("#meta-og-description").content = languageCopy.metaDescription;
+        document.querySelector("#brand-link").setAttribute("aria-label", languageCopy.brandAriaLabel);
+        document.querySelector("#page-eyebrow").textContent = languageCopy.pageEyebrow;
+        document.querySelector("#page-copy").textContent = languageCopy.pageCopy;
+        document.querySelector("#back-to-site").textContent = languageCopy.backToSite;
+        document.querySelector("#pdf-smooth").textContent = languageCopy.pdfSmooth;
+        document.querySelector("#pdf-styled").textContent = languageCopy.pdfStyled;
+        jumpNav.setAttribute("aria-label", languageCopy.jumpNavAriaLabel);
+
+        languageButtons.forEach((button) => {
+          const isActive = button.dataset.langSwitch === currentLanguage;
+          button.classList.toggle("is-active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
+        });
+
+        localStorage.setItem(LANGUAGE_KEY, currentLanguage);
+      };
 
       const createDish = (item) => {
         const article = document.createElement("article");
@@ -384,6 +490,7 @@
       };
 
       const renderGroup = (title, sections) => {
+        const formatter = new Intl.Collator(copy[currentLanguage].collator);
         const group = document.createElement("section");
         group.className = "menu-group";
         group.id = slugify(title);
@@ -424,9 +531,12 @@
         })
         .then((data) => {
           const groups = [
-            ["Food", data.food],
-            ["Drinks", data.drinks],
+            [copy[currentLanguage].food, data.food],
+            [copy[currentLanguage].drinks, data.drinks],
           ];
+
+          root.innerHTML = "";
+          jumpNav.innerHTML = "";
 
           groups.forEach(([title, sections]) => {
             const link = document.createElement("a");
@@ -445,8 +555,17 @@
           });
         })
         .catch(() => {
-          root.innerHTML = "<p>The menu could not be loaded. Please use the PDF link above.</p>";
+          root.innerHTML = `<p>${copy[currentLanguage].menuLoadError}</p>`;
         });
+
+      languageButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          applyLanguage(button.dataset.langSwitch || "en");
+          location.reload();
+        });
+      });
+
+      applyLanguage(currentLanguage);
     </script>
   </body>
 </html>

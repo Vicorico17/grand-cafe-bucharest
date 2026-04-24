@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
+      id="meta-description"
       name="description"
       content="Grand Cafe Bucharest, opening in the historic Monteoru Palace on Calea Victoriei in Bucharest."
     >
-    <title>Grand Cafe Bucharest</title>
+    <title id="page-title">Grand Cafe Bucharest</title>
     <link rel="canonical" href="https://grandcafe.ro/">
     <meta property="og:url" content="https://grandcafe.ro/">
-    <meta property="og:title" content="Grand Cafe Bucharest">
+    <meta id="meta-og-title" property="og:title" content="Grand Cafe Bucharest">
     <meta
+      id="meta-og-description"
       property="og:description"
       content="Grand Cafe Bucharest, opening in the historic Monteoru Palace on Calea Victoriei in Bucharest."
     >
@@ -21,26 +23,39 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Grand Cafe Bucharest home">
+      <a class="brand" href="#home" id="brand-link" aria-label="Grand Cafe Bucharest home">
         <span>Grand Cafe</span>
         <strong>Bucharest</strong>
       </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#history">History</a>
-        <a href="/menu/">Menu</a>
-        <a href="#reserve">Reserve</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="site-controls">
+        <button class="nav-toggle" type="button" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+          <a href="#home" id="nav-home">Home</a>
+          <a href="#history" id="nav-history">History</a>
+          <a href="/menu/" id="nav-menu">Menu</a>
+          <a href="#reserve" id="nav-reserve">Reserve</a>
+          <a href="#contact" id="nav-contact">Contact</a>
+        </nav>
+        <div class="language-switcher" id="language-switcher" aria-label="Language switcher">
+          <button class="lang-button is-active" type="button" data-lang-switch="en" aria-pressed="true">
+            <span class="flag" aria-hidden="true">🇬🇧</span>
+            <span>EN</span>
+          </button>
+          <button class="lang-button" type="button" data-lang-switch="ro" aria-pressed="false">
+            <span class="flag" aria-hidden="true">🇷🇴</span>
+            <span>RO</span>
+          </button>
+        </div>
+      </div>
     </header>
 
     <main>
       <section class="hero" id="home" aria-label="Grand Cafe Bucharest">
         <img
+          id="hero-image"
           src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Casa%20Monteoru.JPG?width=1400"
           alt="Casa Monteoru on Calea Victoriei in Bucharest"
           fetchpriority="high"
@@ -48,22 +63,22 @@
         >
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">Opening soon on Calea Victoriei</p>
-          <h1>Grand Cafe Bucharest</h1>
-          <p>
+          <p class="eyebrow" id="hero-eyebrow">Opening soon on Calea Victoriei</p>
+          <h1 id="hero-title">Grand Cafe Bucharest</h1>
+          <p id="hero-copy">
             A new cafe and dining room inside the old Monteoru Palace, bringing
             breakfast, coffee, dinner, and late conversation to one of Bucharest's
             most beautiful addresses.
           </p>
           <div class="hero-actions">
             <button class="button liquid-button" type="button" data-reserve-open aria-haspopup="dialog">
-              <span>Reserve</span>
+              <span id="hero-reserve-label">Reserve</span>
             </button>
             <a class="button liquid-button" href="/menu/">
-              <span>Menu</span>
+              <span id="hero-menu-label">Menu</span>
             </a>
             <button class="button liquid-button" type="button" data-history-open aria-haspopup="dialog">
-              <span>Learn History</span>
+              <span id="hero-history-label">Learn History</span>
             </button>
           </div>
         </div>
@@ -72,23 +87,23 @@
       <section class="intro section-band" aria-label="Restaurant highlights">
         <div>
           <span class="metric">115</span>
-          <p>Calea Victoriei</p>
+          <p id="intro-address">Calea Victoriei</p>
         </div>
         <div>
           <span class="metric">1874</span>
-          <p>Monteoru House completed</p>
+          <p id="intro-year">Monteoru House completed</p>
         </div>
         <div>
           <span class="metric">Now</span>
-          <p>A grand cafe for Bucharest</p>
+          <p id="intro-now">A grand cafe for Bucharest</p>
         </div>
       </section>
 
       <section class="history" id="history">
         <div class="section-copy history-intro">
-          <p class="eyebrow">History</p>
-          <h2>A house with more than one life.</h2>
-          <p>
+          <p class="eyebrow" id="history-eyebrow">History</p>
+          <h2 id="history-title">A house with more than one life.</h2>
+          <p id="history-copy">
             Casa Monteoru began as a private residence, became one of Calea
             Victoriei's great interiors, passed through the upheavals of the
             twentieth century, and returned to public cultural life.
@@ -96,17 +111,17 @@
         </div>
         <div class="history-feature">
           <div class="history-feature-card">
-            <p class="history-feature-tag">Immersive feature</p>
-            <h3>Learn the full Monteoru story.</h3>
-            <p>
+            <p class="history-feature-tag" id="history-feature-tag">Immersive feature</p>
+            <h3 id="history-feature-title">Learn the full Monteoru story.</h3>
+            <p id="history-feature-copy">
               Open a dedicated history experience with the complete timeline,
               archival moments, and the next chapter for Grand Cafe Bucharest.
             </p>
             <button class="button liquid-button history-launch" type="button" data-history-open aria-haspopup="dialog">
-              <span>Learn History</span>
+              <span id="history-feature-button">Learn History</span>
             </button>
           </div>
-          <p class="history-feature-note">
+          <p class="history-feature-note" id="history-feature-note">
             A guided archive of Casa Monteoru, from private residence to grand cafe.
           </p>
         </div>
@@ -120,14 +135,14 @@
           >
             <div class="history-portal-header">
               <div>
-                <p class="eyebrow">History Experience</p>
+                <p class="eyebrow" id="history-portal-eyebrow">History Experience</p>
                 <h3 id="history-experience-title">Casa Monteoru, year by year.</h3>
               </div>
-              <button class="history-close" type="button" data-history-close aria-label="Close history experience">
-                Close
+              <button class="history-close" type="button" data-history-close id="history-close" aria-label="Close history experience">
+                <span id="history-close-label">Close</span>
               </button>
             </div>
-            <p class="history-portal-copy">
+            <p class="history-portal-copy" id="history-portal-copy">
               Follow the building from 1874 to now. Tap a year to open each chapter.
             </p>
             <div class="timeline-shell" aria-label="Casa Monteoru timeline">
@@ -145,8 +160,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1874" hidden>
-                    <h3>Built for Alecu Niculescu</h3>
-                    <p>
+                    <h3 id="history-1874-title">Built for Alecu Niculescu</h3>
+                    <p id="history-1874-copy">
                       The house is completed on Calea Victoriei, then one of
                       Bucharest's defining addresses for private residences and urban
                       society.
@@ -166,8 +181,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1883" hidden>
-                    <h3>Grigore C. Monteoru takes ownership</h3>
-                    <p>
+                    <h3 id="history-1883-title">Grigore C. Monteoru takes ownership</h3>
+                    <p id="history-1883-copy">
                       The property is bought by Grigore Constantinescu-Monteoru, a
                       liberal politician, landowner, and founder of the Sarata
                       Monteoru resort.
@@ -187,8 +202,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1887" hidden>
-                    <h3>A radical transformation begins</h3>
-                    <p>
+                    <h3 id="history-1887-title">A radical transformation begins</h3>
+                    <p id="history-1887-copy">
                       Architect Nicolae Cutarida files plans for new openings,
                       floors, railings, wallpapers, stoves, and the main staircase.
                       Ion Mincu is also tied to the restoration.
@@ -208,8 +223,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1889" hidden>
-                    <h3>The French eclectic interior is finished</h3>
-                    <p>
+                    <h3 id="history-1889-title">The French eclectic interior is finished</h3>
+                    <p id="history-1889-copy">
                       The rooms receive painted stucco ceilings, rare wood paneling,
                       a monumental stair, French silk wall coverings, and Paris-made
                       furniture.
@@ -229,8 +244,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1898" hidden>
-                    <h3>The garden gains new sculpture</h3>
-                    <p>
+                    <h3 id="history-1898-title">The garden gains new sculpture</h3>
+                    <p id="history-1898-copy">
                       Additional statues by Ion Georgescu and Ion Valbudea join the
                       sculptures Monteoru brought from Greece, marking agriculture
                       and Romanian industry.
@@ -250,8 +265,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1917" hidden>
-                    <h3>War leaves absences</h3>
-                    <p>
+                    <h3 id="history-1917-title">War leaves absences</h3>
+                    <p id="history-1917-copy">
                       The two later garden statues disappear during the First World
                       War years, becoming part of the house's interrupted story.
                     </p>
@@ -270,8 +285,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1923" hidden>
-                    <h3>The Polish Legation takes residence</h3>
-                    <p>
+                    <h3 id="history-1923-title">The Polish Legation takes residence</h3>
+                    <p id="history-1923-copy">
                       After the First World War, the house briefly serves as the
                       Polish Legation before returning to the Monteoru-Catargi family.
                     </p>
@@ -290,8 +305,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1945" hidden>
-                    <h3>The postwar transfer begins</h3>
-                    <p>
+                    <h3 id="history-1945-title">The postwar transfer begins</h3>
+                    <p id="history-1945-copy">
                       Elena Lascar Catargi, Grigore Monteoru's daughter, is reported
                       to have ceded the property under pressure in the postwar Soviet
                       context.
@@ -311,8 +326,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1949" hidden>
-                    <h3>The house is nationalized</h3>
-                    <p>
+                    <h3 id="history-1949-title">The house is nationalized</h3>
+                    <p id="history-1949-copy">
                       In the communist period, the property leaves the family's
                       possession and is absorbed into the new state system.
                     </p>
@@ -331,8 +346,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-1952" hidden>
-                    <h3>The Writers' Union moves in</h3>
-                    <p>
+                    <h3 id="history-1952-title">The Writers' Union moves in</h3>
+                    <p id="history-1952-copy">
                       After nationalization, Casa Monteoru becomes the headquarters
                       of the Romanian Writers' Union and remains a literary address
                       for decades.
@@ -352,8 +367,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-2013" hidden>
-                    <h3>The heirs regain the building</h3>
-                    <p>
+                    <h3 id="history-2013-title">The heirs regain the building</h3>
+                    <p id="history-2013-copy">
                       Court decisions return the property to the rightful heirs, and
                       the Writers' Union leaves Casa Monteoru.
                     </p>
@@ -372,8 +387,8 @@
                     </figure>
                   </button>
                   <div class="timeline-copy" id="history-now" hidden>
-                    <h3>Grand Cafe Bucharest opens the next chapter</h3>
-                    <p>
+                    <h3 id="history-now-title">Grand Cafe Bucharest opens the next chapter</h3>
+                    <p id="history-now-copy">
                       The house returns to daily life on Calea Victoriei as a place
                       for dining, conversation, and evenings shaped by the building's
                       historic rooms.
@@ -389,22 +404,22 @@
       <section class="menu section-band" id="menu">
         <div class="menu-feature">
           <div class="menu-story">
-            <p class="eyebrow">Menu</p>
-            <h2>Grand cafe classics, all day.</h2>
-            <p>
+            <p class="eyebrow" id="menu-eyebrow">Menu</p>
+            <h2 id="menu-title">Grand cafe classics, all day.</h2>
+            <p id="menu-copy">
               Breakfast, coffee, lunch, dinner, and a late bar list shaped for
               Calea Victoriei: familiar dishes, polished service, and a few
               Romanian notes throughout the day.
             </p>
             <div class="menu-service">
-              <h3>Opening Service</h3>
-              <p>
+              <h3 id="menu-service-title">Opening Service</h3>
+              <p id="menu-service-copy">
                 Morning coffee and pastry, a la carte lunch, dinner service, and
                 classic cocktails in the evening.
               </p>
             </div>
             <a class="button liquid-button menu-button" href="/menu/">
-              <span>Show the full menu</span>
+              <span id="menu-button-label">Show the full menu</span>
             </a>
           </div>
           <figure class="menu-photo">
@@ -414,20 +429,20 @@
               loading="lazy"
               decoding="async"
             >
-            <figcaption>Coffee and croissant service</figcaption>
+            <figcaption id="menu-figcaption">Coffee and croissant service</figcaption>
           </figure>
         </div>
       </section>
 
       <section class="reserve" id="reserve">
         <div class="section-copy">
-          <p class="eyebrow">Reserve</p>
-          <h2>Book for the opening season.</h2>
-          <p>
+          <p class="eyebrow" id="reserve-eyebrow">Reserve</p>
+          <h2 id="reserve-title">Book for the opening season.</h2>
+          <p id="reserve-copy">
             Join the first tables at Grand Cafe Bucharest for the opening season.
           </p>
           <button class="button liquid-button reserve-spot" type="button" data-reserve-open aria-haspopup="dialog">
-            <span>Reserve your spot</span>
+            <span id="reserve-button-label">Reserve</span>
           </button>
         </div>
       </section>
@@ -442,44 +457,44 @@
         >
           <div class="reservation-portal-grid">
             <div class="reservation-scene">
-              <p class="eyebrow">Reservation Experience</p>
+              <p class="eyebrow" id="reservation-eyebrow">Reservation Experience</p>
               <h3 id="reservation-experience-title">Choose your table, service, and hour.</h3>
-              <p>
+              <p id="reservation-copy">
                 A mock booking flow for Grand Cafe Bucharest, shaped like a concierge moment rather than a generic form.
               </p>
               <div class="reservation-highlights">
                 <div>
-                  <strong>Morning Room</strong>
-                  <span>Pastry, coffee, early light.</span>
+                  <strong id="reservation-highlight-1-title">Morning Room</strong>
+                  <span id="reservation-highlight-1-copy">Pastry, coffee, early light.</span>
                 </div>
                 <div>
-                  <strong>Dining Salon</strong>
-                  <span>Lunch and dinner under the historic ceilings.</span>
+                  <strong id="reservation-highlight-2-title">Dining Salon</strong>
+                  <span id="reservation-highlight-2-copy">Lunch and dinner under the historic ceilings.</span>
                 </div>
                 <div>
-                  <strong>Late Aperitif</strong>
-                  <span>Cocktails, dessert, and a slower table.</span>
+                  <strong id="reservation-highlight-3-title">Late Aperitif</strong>
+                  <span id="reservation-highlight-3-copy">Cocktails, dessert, and a slower table.</span>
                 </div>
               </div>
             </div>
             <div class="reservation-form-shell">
-              <button class="reservation-close" type="button" data-reserve-close aria-label="Close reservation experience">
-                Close
+              <button class="reservation-close" type="button" data-reserve-close id="reservation-close" aria-label="Close reservation experience">
+                <span id="reservation-close-label">Close</span>
               </button>
               <form class="reservation-form" data-reserve-form>
                 <label>
-                  <span>Guest name</span>
-                  <input type="text" name="guest_name" placeholder="Ana Ionescu" required>
+                  <span id="reservation-label-name">Guest name</span>
+                  <input type="text" id="reservation-input-name" name="guest_name" placeholder="Ana Ionescu" required>
                 </label>
                 <label>
-                  <span>Date</span>
+                  <span id="reservation-label-date">Date</span>
                   <input type="date" name="date" required>
                 </label>
                 <div class="reservation-form-row">
                   <label>
-                    <span>Time</span>
+                    <span id="reservation-label-time">Time</span>
                     <select name="time" required>
-                      <option value="">Select</option>
+                      <option value="" id="reservation-option-time-empty">Select</option>
                       <option>09:00</option>
                       <option>11:30</option>
                       <option>13:00</option>
@@ -488,49 +503,49 @@
                     </select>
                   </label>
                   <label>
-                    <span>Guests</span>
+                    <span id="reservation-label-guests">Guests</span>
                     <select name="guests" required>
-                      <option value="">Select</option>
-                      <option>2 guests</option>
-                      <option>4 guests</option>
-                      <option>6 guests</option>
-                      <option>8 guests</option>
+                      <option value="" id="reservation-option-guests-empty">Select</option>
+                      <option id="reservation-option-guests-2">2 guests</option>
+                      <option id="reservation-option-guests-4">4 guests</option>
+                      <option id="reservation-option-guests-6">6 guests</option>
+                      <option id="reservation-option-guests-8">8 guests</option>
                     </select>
                   </label>
                 </div>
                 <fieldset class="reservation-service">
-                  <legend>Service</legend>
+                  <legend id="reservation-label-service">Service</legend>
                   <label>
                     <input type="radio" name="service" value="Breakfast room" checked>
-                    <span>Breakfast room</span>
+                    <span id="reservation-service-1">Breakfast room</span>
                   </label>
                   <label>
                     <input type="radio" name="service" value="Lunch salon">
-                    <span>Lunch salon</span>
+                    <span id="reservation-service-2">Lunch salon</span>
                   </label>
                   <label>
                     <input type="radio" name="service" value="Dinner salon">
-                    <span>Dinner salon</span>
+                    <span id="reservation-service-3">Dinner salon</span>
                   </label>
                   <label>
                     <input type="radio" name="service" value="Late aperitif">
-                    <span>Late aperitif</span>
+                    <span id="reservation-service-4">Late aperitif</span>
                   </label>
                 </fieldset>
                 <label>
-                  <span>Notes</span>
-                  <textarea name="notes" rows="3" placeholder="Window table, anniversary, quiet corner..."></textarea>
+                  <span id="reservation-label-notes">Notes</span>
+                  <textarea id="reservation-input-notes" name="notes" rows="3" placeholder="Window table, anniversary, quiet corner..."></textarea>
                 </label>
                 <button class="button liquid-button reservation-submit" type="submit">
-                  <span>Confirm mock reservation</span>
+                  <span id="reservation-submit-label">Confirm mock reservation</span>
                 </button>
               </form>
               <div class="reservation-confirmation" hidden data-reserve-success>
-                <p class="eyebrow">Reserved</p>
-                <h3>Your table is held.</h3>
+                <p class="eyebrow" id="reservation-success-eyebrow">Reserved</p>
+                <h3 id="reservation-success-title">Your table is held.</h3>
                 <p data-reserve-summary></p>
                 <button class="button liquid-button" type="button" data-reserve-reset>
-                  <span>Book another table</span>
+                  <span id="reservation-reset-label">Book another table</span>
                 </button>
               </div>
             </div>
@@ -540,20 +555,20 @@
 
       <section class="contact section-band" id="contact">
         <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>Find us in the heart of Bucharest.</h2>
+          <p class="eyebrow" id="contact-eyebrow">Contact</p>
+          <h2 id="contact-title">Find us in the heart of Bucharest.</h2>
         </div>
         <div class="contact-grid">
           <div>
-            <h3>Address</h3>
+            <h3 id="contact-address-title">Address</h3>
             <p>Casa Monteoru<br>115 Calea Victoriei<br>Bucharest, Romania</p>
           </div>
           <div>
-            <h3>Opening</h3>
-            <p>Reservations list now open<br>Daily service coming soon</p>
+            <h3 id="contact-opening-title">Opening</h3>
+            <p id="contact-opening-copy">Reservations list now open<br>Daily service coming soon</p>
           </div>
           <div>
-            <h3>Reach us</h3>
+            <h3 id="contact-reach-title">Reach us</h3>
             <p><a href="mailto:reservations@grandcafe.ro">reservations@grandcafe.ro</a></p>
             <p><a href="tel:+40700000000">+40 700 000 000</a></p>
           </div>
